@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a4c6e384-3cf0-4414-9666-96511b633829" name="adp" url="http://adp.waos.asia">
+        <fileTransfer host="adp.waos.asia" port="22" rootFolder="/var/www/adp/html" accessType="SFTP" password="dfe6dfcfdfdedfc7dfcfdfc3dfc4df93df93" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
