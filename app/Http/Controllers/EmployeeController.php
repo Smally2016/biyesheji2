@@ -4,6 +4,8 @@ use App\Http\Models\DepartmentEmployeeModel;
 use App\Http\Models\DepartmentModel;
 use App\Http\Models\EmployeeModel;
 use App\Http\Models\TitleModel;
+use App\Http\Models\UserModel;
+use App\User;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
 use App\Helpers\NationalHelper;
@@ -66,6 +68,14 @@ class EmployeeController extends Controller
                 'employee_id' => EmployeeModel::where('nric', $data['nric'])->first()->employee_id
             ]);
             Session::flash('success', 'Created Successfully');
+            $phone_number = $data['phone'];
+            UserModel::create([
+                'phone_number' => $phone_number,
+                'username' => $phone_number,
+                'password' => bcrypt($phone_number),
+                'is_admin' => UserModel::EMPLOYEE,
+                'status' => UserModel::STATUS_NORMAL
+            ]);
             return Redirect::to(Request::path());
         } else {
             Session::flash('danger', 'Created Failed.');

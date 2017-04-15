@@ -15,7 +15,7 @@ class UserTableSeeder extends Seeder
         \App\User::create([
             'username' => 'root',
             'name' => 'root',
-            'email' => 'root@waos.asia',
+            'email' => '',
             'password' => bcrypt('abc123456'),
             'status' => 1,
             'is_admin' => 1,

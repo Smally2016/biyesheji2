@@ -41,6 +41,10 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
     const NORMAL = 0;
     const ADMIN = 1;
     const SUPER_ADMIN = 2;
+    const EMPLOYEE = 3;
+
+    const STATUS_BANED = 0;
+    const STATUS_NORMAL = 1;
 
     public static $roles = [
         0 => 'Normal',
