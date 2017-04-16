@@ -9,13 +9,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Department
-            <small>List</small>
+            部门管理
+            <small>列表</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/department">Department</a></li>
-            <li class="active">List</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/department">部门</a></li>
+            <li class="active">列表</li>
         </ol>
     </section>
 
@@ -28,13 +28,13 @@
                 <table id="user_table" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>Department Name</th>
-                        <th>Remarks</th>
-                        <th>Employees</th>
-                        <th>Users</th>
-                        <th>Sites</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>部门名称</th>
+                        <th>备注</th>
+                        <th>员工</th>
+                        <th>用户</th>
+                        <th>所在地点</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                     </thead>
                     <tbody>

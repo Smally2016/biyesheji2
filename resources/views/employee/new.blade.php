@@ -10,13 +10,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Employee
-            <small>New</small>
+            员工
+            <small>新增</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/employee/list">Employee</a></li>
-            <li class="active">New</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/employee/list">员工</a></li>
+            <li class="active">新增</li>
         </ol>
     </section>
 
@@ -44,17 +44,17 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-sm-6">
-                            <label for="name">Name <span class="text-red">*</span></label>
+                            <label for="name">姓名 <span class="text-red">*</span></label>
                             <input type="text" class="form-control" id="name" required name="name"
                                    value="{{old('name')}}">
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="nric">NRIC <span class="text-red">*</span></label>
+                            <label for="nric">身份证号 <span class="text-red">*</span></label>
                             <input type="text" class="form-control" id="nric" required name="nric"
                                    value="{{old('nric')}}">
                         </div>
                         <div class="form-group col-sm-2">
-                            <label>D.O.B <span class="text-red">*</span></label>
+                            <label>生日 <span class="text-red">*</span></label>
                             <select class="form-control" name="day" required>
                                 @for($i = 1; $i <= 31; $i++)
                                     <option value="{{$i}}">{{$i}}</option>
@@ -79,18 +79,18 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label>Gender <span class="text-red">*</span></label>
+                            <label>性别 <span class="text-red">*</span></label>
                             <select class="form-control" name="gender" required>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
+                                <option value="Male">男</option>
+                                <option value="Female">女</option>
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="id">Staff ID</label>
+                            <label for="id">员工ID</label>
                             <input type="text" class="form-control" id="id" required name="id">
                         </div>
                         <div class="form-group col-sm-6">
-                            <label>Nationality <span class="text-red">*</span></label>
+                            <label>国籍 <span class="text-red">*</span></label>
                             <select class="form-control select2" name="nationality" required>
                                 @foreach(\App\Helpers\NationalHelper::$nationals as $nation)
                                     <option value="{{$nation}}">{{$nation}}</option>
@@ -98,7 +98,7 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label>Citizenship <span class="text-red">*</span></label>
+                            <label>城市 <span class="text-red">*</span></label>
                             <select class="form-control" name="citizenship" required>
                                 @foreach(\App\Helpers\NationalHelper::$citizenships as $citi)
                                     <option value="{{$citi}}">{{$citi}}</option>
@@ -106,7 +106,7 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label>Department <span class="text-red">*</span></label>
+                            <label>部门 <span class="text-red">*</span></label>
                             <select class="form-control" name="department_id" required>
                                 @foreach($departments as $department)
                                     <option value="{{$department->department_id}}">{{$department->name}}</option>
@@ -114,7 +114,7 @@
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label>Title <span class="text-red">*</span></label>
+                            <label>职位 <span class="text-red">*</span></label>
                             <select class="form-control" name="title_id" required>
                                 @foreach($titles as $title)
                                     <option value="{{$title->title_id}}">{{$title->name}}</option>
@@ -122,43 +122,43 @@
                             </select>
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="email">Email</label>
+                            <label for="email">邮箱</label>
                             <input type="email" class="form-control" id="email" name="email" value="{{old('email')}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="phone">Mobile</label>
+                            <label for="phone">手机号</label>
                             <input type="text" class="form-control" id="phone" name="phone" value="{{old('phone')}}">
                         </div>
 
                         <div class="form-group  col-sm-12">
-                            <label for="address">Address</label>
+                            <label for="address">地址</label>
                             <input type="text" class="form-control" id="address" name="address"
                                    value="{{old('address')}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="address_postal">Postal Code</label>
+                            <label for="address_postal">邮编</label>
                             <input type="text" class="form-control" id="address_postal" name="address_postal"
                                    value="{{old('address_postal')}}">
                         </div>
 
-                        <div class="form-group  col-sm-6" style="clear: left">
-                            <label for="nok">Next of Kin's Name</label>
-                            <input type="text" class="form-control" id="nok" name="nok" value="{{old('nok')}}">
-                        </div>
+                        {{--<div class="form-group  col-sm-6" style="clear: left">--}}
+                            {{--<label for="nok">Next of Kin's Name</label>--}}
+                            {{--<input type="text" class="form-control" id="nok" name="nok" value="{{old('nok')}}">--}}
+                        {{--</div>--}}
 
-                        <div class="form-group  col-sm-6">
-                            <label for="nok_phone">Next of Kin's Contact</label>
-                            <input type="text" class="form-control" id="nok_phone" name="nok_phone"
-                                   value="{{old('nok_phone')}}">
-                        </div>
+                        {{--<div class="form-group  col-sm-6">--}}
+                            {{--<label for="nok_phone">Next of Kin's Contact</label>--}}
+                            {{--<input type="text" class="form-control" id="nok_phone" name="nok_phone"--}}
+                                   {{--value="{{old('nok_phone')}}">--}}
+                        {{--</div>--}}
 
                         <div class="form-group col-sm-12">
-                            <label>Remark</label>
+                            <label>备注</label>
                             <textarea class="form-control" rows="3" name="remark">{{old('remark')}}</textarea>
                         </div>
 
                         <div class="form-group col-sm-6">
-                            <label>Bank</label>
+                            <label>开户银行</label>
                             <select class="form-control" name="bank" required>
                                 @foreach(\App\Http\Models\EmployeeModel::$banks as $bank)
                                     <option value="{{$bank}}">{{$bank}}</option>
@@ -167,7 +167,7 @@
                         </div>
 
                         <div class="form-group col-sm-6">
-                            <label>Bank Account</label>
+                            <label>银行账号</label>
                             <input type="text" class="form-control" id="account" name="account">
                         </div>
 
