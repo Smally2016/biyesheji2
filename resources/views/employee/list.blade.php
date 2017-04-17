@@ -9,13 +9,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Employee
-            <small>List</small>
+            员工
+            <small>列表</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/employee/list">Employee</a></li>
-            <li class="active">List</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/employee/list">员工</a></li>
+            <li class="active">列表</li>
         </ol>
     </section>
 
@@ -25,26 +25,26 @@
         <!-- Default box -->
         <div class="box">
             <div class="box-header">
-                <a href="/employee/list" class="btn btn-primary {{!isset($id)?'disabled':''}}">All</a>
+                <a href="/employee/list" class="btn btn-primary {{!isset($id)?'disabled':''}}">所有员工</a>
                 <a href="/employee/list/current"
-                   class="btn btn-primary {{(isset($id) and $id=='current')?'disabled':''}}">Current</a>
+                   class="btn btn-primary {{(isset($id) and $id=='current')?'disabled':''}}">在职</a>
                 <a href="/employee/list/resigned"
-                   class="btn btn-primary {{(isset($id) and $id=='resigned')?'disabled':''}}">Resigned</a>
+                   class="btn btn-primary {{(isset($id) and $id=='resigned')?'disabled':''}}">离职</a>
                 <a href="/employee/list/reconsider"
-                   class="btn btn-primary {{(isset($id) and $id=='reconsider')?'disabled':''}}">Re-consider</a>
+                   class="btn btn-primary {{(isset($id) and $id=='reconsider')?'disabled':''}}">考虑中</a>
             </div>
             <div class="box-body">
 
                 <table id="user_table" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>NRIC</th>
-                        <th>Mobile</th>
-                        <th>Department</th>
-                        <th>Title</th>
-                        <th>Status</th>
-                        <th>Edit</th>
+                        <th>姓名</th>
+                        <th>身份证号</th>
+                        <th>手机号码</th>
+                        <th>公寓</th>
+                        <th>职位</th>
+                        <th>状态</th>
+                        <th>编辑</th>
                     </tr>
                     </thead>
                     <tbody>

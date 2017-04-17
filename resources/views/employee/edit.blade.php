@@ -10,13 +10,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Employee
-            <small>Edit</small>
+            员工
+            <small>编辑</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/employee/list">Employee</a></li>
-            <li class="active">Edit</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/employee/list">员工</a></li>
+            <li class="active">编辑</li>
         </ol>
     </section>
 

@@ -9,7 +9,7 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Employee
+            员工
             <small>Card</small>
         </h1>
         <ol class="breadcrumb">

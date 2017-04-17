@@ -8,13 +8,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Employee Title
-            <small>New</small>
+            员工职位管理
+            <small>新增</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/employee/title/list">Employee Title</a></li>
-            <li class="active">New</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/employee/title/list">员工职位</a></li>
+            <li class="active">新增</li>
         </ol>
     </section>
 
@@ -28,13 +28,13 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-sm-offset-2 col-sm-8">
-                            <label>Employee Title Name</label>
+                            <label>职位名称</label>
                             <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}"
                                    required>
                         </div>
 
                         <div class="form-group col-sm-offset-2 col-sm-8">
-                            <label>Remark</label>
+                            <label>备注</label>
                             <textarea class="form-control" rows="3" name="remark">{{old('remark')}}</textarea>
                         </div>
 
