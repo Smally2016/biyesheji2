@@ -7,7 +7,7 @@ class MobileController extends Controller
 
     public function index()
     {
-
+        return view('user.dashboard.dashboard');
     }
 
     public function checkIn()
@@ -18,8 +18,8 @@ class MobileController extends Controller
 
     public function getRosterList()
     {
-
-
+//        8023lx1994
+//Smally2016
     }
 
     public function getReport()

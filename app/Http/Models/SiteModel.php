@@ -2,6 +2,7 @@
 
 class SiteModel extends BaseModel
 {
+    const STATUS_NORMAL = 1;
 
     protected $table = 'sites';
     protected $primaryKey = 'site_id';

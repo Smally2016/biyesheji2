@@ -55,6 +55,11 @@ class DepartmentModel extends BaseModel
         );
     }
 
+    public function shifts()
+    {
+        return $this->hasMany(ShiftModel::class, 'department_id', 'department_id');
+    }
+
     public function departmentSite()
     {
         return $this->hasMany('App\Http\Models\DepartmentSiteModel', 'department_id', 'department_id');
@@ -68,7 +73,6 @@ class DepartmentModel extends BaseModel
     public function getCurrentEmployees()
     {
         return $this->employee()->where('status', EmployeeModel::CURRENT);
-
     }
 
 }

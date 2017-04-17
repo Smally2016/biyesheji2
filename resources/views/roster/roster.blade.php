@@ -103,7 +103,7 @@
                             <tr>
                                 <td>{{$count += 1}}</td>
                                 <td>{{$employee->employee->nric}}</td>
-                                <td>{{$employee->employee->name}} {!!$employee->employee->notification_valid?'':'<span style="color:red">(NV)</span>'!!}</td>
+                                <td>{{$employee->employee->name}}</td>
                                 <td>{{$employee->employee->title->name}}</td>
                                 <?php $start_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1)))->addDay(-1) ?>
                                 @for($i = 0; $i < 7; $i++)
@@ -154,7 +154,7 @@
                         <div class="col-sm-3">
                             <select class="form-control select2" name="employee_id">
                                 @foreach($shift->department->getCurrentEmployees as $employee)
-                                    <option value="{{$employee->employee_id}}">{{$employee->name}} {{$employee->nric}} {!!$employee->notification_valid?'':'<p>(NV)</p>'!!}</option>
+                                    <option value="{{$employee->employee_id}}">{{$employee->name}} {{$employee->nric}}</option>
                                 @endforeach
                             </select>
                         </div>

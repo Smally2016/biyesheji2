@@ -19,9 +19,6 @@ class DashboardController extends Controller
         $records = AttendanceModel::orderBy('date_time', 'desc')->take(30)->get();
         foreach ($records as $record) {
             $employee_name = $record->employee->name;
-            if ($record->employee->notification_valid == false) {
-                $employee_name .= ' <span style="color:red">(NV)</span>';
-            }
             $arr[] = array(
                 $record->date(),
                 $record->time(),

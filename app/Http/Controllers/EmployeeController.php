@@ -71,7 +71,7 @@ class EmployeeController extends Controller
             $phone_number = $data['phone'];
             $email = $data['email'];
             UserModel::create([
-                'phone_number' => $phone_number,
+                'phone' => $phone_number,
                 'username' => $phone_number,
                 'password' => bcrypt($phone_number),
                 'email' => $email,

@@ -113,8 +113,8 @@
                         <div class="form-group col-sm-6" style="clear: left">
                             <label>Gender <span class="text-red">*</span></label>
                             <select class="form-control" name="gender" required>
-                                <option value="MALE" {{$employee->gender=='MALE'?'selected':''}}>MALE</option>
-                                <option value="FEMALE" {{$employee->gender=='FEMALE'?'selected':''}}>FEMALE</option>
+                                <option value="男" {{$employee->gender=='男'?'selected':''}}>男</option>
+                                <option value="女" {{$employee->gender=='女'?'selected':''}}>女</option>
                             </select>
                         </div>
                         <div class="form-group col-sm-6">

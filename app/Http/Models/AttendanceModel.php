@@ -15,6 +15,9 @@ class AttendanceModel extends BaseModel
     const LEAVE = 4;
     const ERROR = 5;
 
+    const MODE_IN = 1;
+    const MODE_OUT = 2;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -36,7 +39,6 @@ class AttendanceModel extends BaseModel
     ];
 
     protected $hidden = [];
-
 
     public function employee()
     {

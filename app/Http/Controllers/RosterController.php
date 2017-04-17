@@ -24,7 +24,7 @@ class RosterController extends Controller
             $selected_week = DateHelper::getCurrentWeek();
             $site = SiteModel::first();
         }
-        $shifts = $site->shift;
+        $shifts = $site->shift ?? [];
         $start_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1)));
         $end_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 7)));
         foreach ($shifts as $shift) {
@@ -73,7 +73,7 @@ class RosterController extends Controller
         return view('roster.roster')->with([
             'selected_year' => $selected_year,
             'selected_week' => $selected_week,
-            'selected_site' => $site->site_id,
+            'selected_site' => $site->site_id ?? 0,
             'sites' => $sites,
             'shifts' => $shifts,
 //            'employees' => $employees,

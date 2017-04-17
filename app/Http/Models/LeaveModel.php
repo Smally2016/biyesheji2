@@ -2,6 +2,7 @@
 
 class LeaveModel extends BaseModel
 {
+    const STATUS_NORMAL = 1;
 
     protected $table = 'leaves';
     protected $primaryKey = 'leave_id';

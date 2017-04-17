@@ -28,6 +28,6 @@ class CreateLeaveTypeTable extends Migration
      */
     public function down()
     {
-        Schema::drop('leave_type');
+        Schema::drop('leave_types');
     }
 }

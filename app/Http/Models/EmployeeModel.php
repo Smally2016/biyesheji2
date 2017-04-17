@@ -75,6 +75,11 @@ class EmployeeModel extends BaseModel
         );
     }
 
+    public function rosters()
+    {
+        return $this->hasMany(RosterModel::class, 'employee_id', 'employee_id');
+    }
+
     public function departmentEmployee()
     {
         return $this->hasMany('App\Http\Models\DepartmentEmployeeModel', 'employee_id', 'employee_id');

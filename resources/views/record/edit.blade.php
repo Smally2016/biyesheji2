@@ -109,7 +109,7 @@
                         <tr id="record_{{$record->attendance_id}}">
                             <td>{{\Carbon\Carbon::parse($record->date_time)->format('d/m/Y H:i:s')}}</td>
                             <td>{{$record->employee->nric}}</td>
-                            <td>{{$record->employee->name}} {!!$record->employee->notification_valid?'':'<span style="color:red">(NV)</span>'!!}</td>
+                            <td>{{$record->employee->name}}</td>
                             <td>{{$record->department->name}}</td>
                             <td>{{$record->site->name}}</td>
                             <td>

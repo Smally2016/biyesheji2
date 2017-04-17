@@ -81,8 +81,8 @@
                         <div class="form-group col-sm-6">
                             <label>性别 <span class="text-red">*</span></label>
                             <select class="form-control" name="gender" required>
-                                <option value="Male">男</option>
-                                <option value="Female">女</option>
+                                <option value="男">男</option>
+                                <option value="女">女</option>
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
