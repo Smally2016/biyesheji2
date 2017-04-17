@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Models\UserModel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
@@ -31,16 +32,21 @@ class UserController extends Controller
             'password' => Request::get('password')
         ];
         if (Auth::attempt($data, true)) {
-            return redirect('/');
+            /** @var UserModel $user */
+            $user = \Auth::user();
+            if ($user->isAdmin()) {
+                return redirect('/');
+            }
+            return redirect('/m');
         } else {
             return redirect('login')->with('message', 'Username / Password is not correct.');
         }
     }
-    
+
     public function logout()
     {
         Auth::logout();
         return Redirect::to('login');
-        
+
     }
 }

@@ -74,4 +74,9 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
         return parent::delete();
     }
 
+    public function isAdmin()
+    {
+        return $this->is_admin == self::ADMIN;
+    }
+
 }

@@ -10,6 +10,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/', 'DashboardController@getInout');
     Route::get('/logout', 'UserController@logout');
 
+    Route::group(['prefix' => 'm'], function () {
+        Route::get('/', 'MobileController@index');
+        Route::get('/rosters', 'UserController@getRosterList');
+        Route::get('/report', 'UserController@getReport');
+    });
+
     Route::group(array('prefix' => 'user'), function () {
         Route::get('/', 'UserController@getList');
         Route::get('/new', 'UserController@createNew');

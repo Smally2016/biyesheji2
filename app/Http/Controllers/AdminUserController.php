@@ -11,7 +11,7 @@ class AdminUserController extends Controller
 {
     public function getList()
     {
-        $users = UserModel::orderBy('is_admin', 'desc')->get();
+        $users = UserModel::whereNotIn('is_admin', [UserModel::EMPLOYEE])->orderBy('is_admin', 'desc')->get();
         return view('admin/user/list')->with(['users' => $users]);
     }
 
@@ -56,7 +56,7 @@ class AdminUserController extends Controller
             $data = Request::all();
             /** @var UserModel $user */
             $user = UserModel::find($user_id);
-       
+
             if ($data['password'] != '') {
                 $data['password'] = Hash::make($data['password']);
             } else {
