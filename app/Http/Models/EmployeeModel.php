@@ -75,6 +75,11 @@ class EmployeeModel extends BaseModel
         );
     }
 
+    public function attendances()
+    {
+        return $this->hasMany(AttendanceModel::class, 'employee_id', 'employee_id');
+    }
+
     public function rosters()
     {
         return $this->hasMany(RosterModel::class, 'employee_id', 'employee_id');
@@ -146,5 +151,20 @@ class EmployeeModel extends BaseModel
         }
 
         return $result;
+    }
+
+    public function getEmployeeId()
+    {
+        return $this->employee_id;
+    }
+
+    public function isWorking()
+    {
+        /** @var AttendanceModel $last_attendance */
+        $last_attendance = AttendanceModel::where([
+            'employee_id' => $this->getEmployeeId(),
+        ])->orderBy('attendance_id', 'desc')->first();
+
+        return $last_attendance->isIn();
     }
 }

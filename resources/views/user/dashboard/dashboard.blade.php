@@ -4,7 +4,7 @@
     <!-- Main content -->
     <section class="content">
 
-        <button class="btn btn-lg btn-primary center-block btn-" style="border-radius: 200px">我要上班</button>
+        <button class="btn btn-lg btn-info center-block">我要上班</button>
 
         <div class="row" style="padding-top: 30px">
             <div class="col-md-3 col-sm-6 col-xs-12">
@@ -13,7 +13,9 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">排班提醒</span>
-                        <span class="info-box-number">90<small>%</small></span>
+                        @foreach($rosters as $roster)
+                            <span class="info-box-number"><small>{{ $roster->date }}</small>{{ $roster->shift->start_time }}</span>
+                        @endforeach
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -26,7 +28,8 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">本次打卡时间</span>
-                        <span class="info-box-number">41,410</span>
+                        <span class="info-box-number">{{ $current_check }}</span>
+                        <span class="info-box-number">{{ $in_out }}</span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -56,7 +59,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">已工作时间</span>
-                        <span class="info-box-number">2,000</span>
+                        <span class="info-box-number">{{ $working_time }}</span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>

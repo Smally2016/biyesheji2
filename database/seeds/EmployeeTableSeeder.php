@@ -120,13 +120,17 @@ class EmployeeTableSeeder extends Seeder
                 'employee_id' => $new_employee->employee_id
             ]);
 
-            UserModel::create([
+            $user = UserModel::create([
                 'phone' => $employee['phone'],
                 'username' => $employee['phone'],
                 'password' => bcrypt($employee['phone']),
                 'email' => $employee['email'],
                 'is_admin' => UserModel::EMPLOYEE,
                 'status' => UserModel::STATUS_NORMAL
+            ]);
+
+            $new_employee->update([
+                'user_id' => $user->user_id
             ]);
         }
     }

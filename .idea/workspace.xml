@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/copy_csv_xls_pdf.swf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/adp.iml" afterPath="$PROJECT_DIR$/.idea/adp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/RosterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/RosterController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/AttendanceModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/AttendanceModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/DepartmentModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/DepartmentModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/LeaveModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/LeaveModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/SiteModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/SiteModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/employee/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/employee/new.blade.php" afterPath="$PROJECT_DIR$/resources/views/employee/new.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/record/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/record/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/roster/roster.blade.php" afterPath="$PROJECT_DIR$/resources/views/roster/roster.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/ShiftModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/ShiftModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Models/UserModel.php" afterPath="$PROJECT_DIR$/app/Http/Models/UserModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/RosterTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/RosterTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SiteTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SiteTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,56 +42,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blank.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/blank.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-689">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-              <folding>
-                <element signature="e#173#201#0#HTML" expanded="true" />
-                <element signature="e#242#267#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="125" column="18" lean-forward="true" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-              <folding>
-                <element signature="n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="254">
+              <caret line="177" column="26" lean-forward="false" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+              <folding>
+                <element signature="e#39#75#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteTableSeeder.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/seeds/SiteTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile_layout.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php">
+      <file leaf-file-name="roster.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/roster/roster.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="92">
+              <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+              <folding>
+                <element signature="e#3645#3671#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attendance.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#3662#3688#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weekly.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/attendance/weekly.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="311" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="391" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/report/report.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="112" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_08_10_015910_create_attendances_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-344">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Models/AttendanceModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3520">
+              <caret line="183" column="17" lean-forward="false" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceTableSeeder.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -113,6 +160,7 @@
       <find>mail</find>
       <find>(NV)</find>
       <find>Male</find>
+      <find>shifts</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -129,11 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020203_create_rosters_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020217_create_shifts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020229_create_sites_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020248_create_titles_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShiftController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" />
@@ -146,7 +189,6 @@
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminUserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RosterController.php" />
         <option value="$PROJECT_DIR$/resources/layout/master.blade.php" />
@@ -154,32 +196,38 @@
         <option value="$PROJECT_DIR$/database/seeds/TitleTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DepartmentTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/SiteModel.php" />
-        <option value="$PROJECT_DIR$/database/seeds/SiteTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/LeaveModel.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/new.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/ShiftTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/DepartmentModel.php" />
-        <option value="$PROJECT_DIR$/database/seeds/RosterTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/record/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/roster/roster.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Models/UserModel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Models/AttendanceModel.php" />
         <option value="$PROJECT_DIR$/database/seeds/RecordTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LeaveTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/LeaveTypeTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Models/UserModel.php" />
+        <option value="$PROJECT_DIR$/database/seeds/RosterTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" />
         <option value="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Models/ShiftModel.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/roster/roster.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Models/AttendanceModel.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/report/report.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
+        <option value="$PROJECT_DIR$/database/seeds/SiteTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -284,7 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -337,6 +384,58 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="roster">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="report">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="dashboard">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -363,6 +462,10 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="attendance">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -381,7 +484,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="layout">
+            <PATH_ELEMENT USER_OBJECT="attendance">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -396,6 +499,56 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="database">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="database">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="seeds">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="database">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="migrations">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -428,6 +581,28 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Models">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -456,6 +631,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,7 +642,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="mobi&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;employee&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/database/migrations/2014_10_12_000000_create_users_table.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;rout&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;atte&#9;null&#9;null&#10;roster&#9;FILE&#9;file:///Users/ivan/Code/waos/app/Http/Controllers/RosterController.php&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="atten&#9;null&#9;null&#10;shift&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/ShiftModel.php&#10;rout&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;roster&#9;null&#9;null&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;mobi&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;employee&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;atte&#9;null&#9;null&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="FullScreen" value="true" />
@@ -474,11 +650,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/user" />
+      <recent name="$PROJECT_DIR$/resources/views/user/roster" />
+      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
       <recent name="$PROJECT_DIR$/resources/views/user/attendance" />
       <recent name="$PROJECT_DIR$/public/fonts" />
-      <recent name="$PROJECT_DIR$/resources/views/user" />
-      <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/resources/views/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
@@ -581,7 +757,8 @@
       <workItem from="1489909532399" duration="334000" />
       <workItem from="1492249210737" duration="20885000" />
       <workItem from="1492432802298" duration="2526000" />
-      <workItem from="1492439857547" duration="2728000" />
+      <workItem from="1492439857547" duration="4584000" />
+      <workItem from="1492516032538" duration="5764000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -695,31 +872,38 @@
       <option name="project" value="LOCAL" />
       <updated>1492395903022</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add mobile">
+      <created>1492443076083</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1492443076084</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47879000" />
+    <option name="totallyTimeSpent" value="55499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="1050" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21387696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.50858366" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.4914163" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
@@ -777,64 +961,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/DateHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/attendance/weekly.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/employee/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/employee/check.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -859,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminUserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -878,13 +997,6 @@
         <state relative-caret-position="92">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SiteTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -938,13 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/RosterModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-759">
@@ -974,14 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ShiftTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/employee/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
@@ -1001,30 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/AttendanceModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2461">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,27 +1109,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/LeaveTypeTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,24 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RosterTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="123" column="22" lean-forward="false" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="22" />
-          <folding>
-            <element signature="e#7#37#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1102,17 +1140,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blank.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-689">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1122,14 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1144,30 +1166,199 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="125" column="18" lean-forward="true" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
-          <folding>
-            <element signature="n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="2875">
+          <caret line="125" column="18" lean-forward="false" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="368">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="82" column="15" lean-forward="false" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020203_create_rosters_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ShiftTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/RosterTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/EmployeeTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/RosterModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/ShiftModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-344">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/AttendanceTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/AttendanceModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3520">
+          <caret line="183" column="17" lean-forward="false" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/roster/roster.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
           <folding>
-            <element signature="e#173#201#0#HTML" expanded="true" />
-            <element signature="e#242#267#0#HTML" expanded="true" />
+            <element signature="e#3645#3671#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3662#3688#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/attendance/weekly.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="311" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="391" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttendanceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="112" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/report/report.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="177" column="26" lean-forward="false" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+          <folding>
+            <element signature="e#39#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SiteTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

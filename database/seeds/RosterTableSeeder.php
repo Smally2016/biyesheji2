@@ -14,7 +14,7 @@ class RosterTableSeeder extends Seeder
     {
         $date_arr = [];
         $start_date = \Carbon\Carbon::createFromFormat('Y-m-d', '2017-01-01');
-        for ($i = $start_date; $i->lte(\Carbon\Carbon::now()); $i->addDay()) {
+        for ($i = $start_date; $i->lte(\Carbon\Carbon::now()->addDay(30)); $i->addDay()) {
             if($i->isWeekday()){
                 $date_arr[] = $i->format('Y-m-d');
             }

@@ -70,13 +70,16 @@ class EmployeeController extends Controller
             Session::flash('success', 'Created Successfully');
             $phone_number = $data['phone'];
             $email = $data['email'];
-            UserModel::create([
+            $user = UserModel::create([
                 'phone' => $phone_number,
                 'username' => $phone_number,
                 'password' => bcrypt($phone_number),
                 'email' => $email,
                 'is_admin' => UserModel::EMPLOYEE,
                 'status' => UserModel::STATUS_NORMAL
+            ]);
+            $employee->update([
+                'user_id' => $user->user_id
             ]);
             return Redirect::to(Request::path());
         } else {

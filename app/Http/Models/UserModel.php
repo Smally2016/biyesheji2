@@ -22,7 +22,11 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
      *
      * @var array
      */
-    protected $fillable = ['username', 'email', 'phone', 'password', 'name', 'remark', 'status', 'is_admin', 'created_at'];
+    protected $fillable = [
+        'username', 'email', 'phone', 'password', 'name',
+        'remark', 'status', 'is_admin', 'created_at',
+        'user_id'
+    ];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -57,6 +61,11 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
         return $this->hasMany('App\Http\Models\DepartmentUserModel', 'user_id', 'user_id');
     }
 
+    public function employee()
+    {
+        return $this->hasOne(EmployeeModel::class, 'user_id', 'user_id');
+    }
+
 
     public function department()
     {
@@ -77,6 +86,13 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
     public function isAdmin()
     {
         return $this->is_admin == self::ADMIN;
+    }
+
+    public function isWorking()
+    {
+        /** @var EmployeeModel $employee */
+        $employee = $this->employee;
+        return $employee->isWorking();
     }
 
 }

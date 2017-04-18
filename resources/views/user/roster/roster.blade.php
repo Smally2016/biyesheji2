@@ -5,7 +5,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            打卡记录
+            排班表
         </h1>
     </section>
 
@@ -73,32 +73,32 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                打卡记录
+                排班表
             </div>
             <div class="table-responsive">
                 <table class="table table-striped b-t b-light">
                     <thead>
                     <tr>
-                        <th>时间</th>
-                        <th>部门</th>
-                        <th>办公地点</th>
-                        <th>打卡状态</th>
+                        <th>日期</th>
+                        <th>地点</th>
+                        <th>上班时间</th>
+                        <th>下班时间</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($attendances as $attendance)
+                    @foreach($rosters as $roster)
                         <tr>
-                            <td>{{ $attendance->date_time }}</td>
-                            <td>{{ $attendance->department->name }}</td>
-                            <td>{{ $attendance->site->name }}</td>
-                            <td>{{ $attendance->mode_text }}</td>
+                            <td>{{ $roster->date }}</td>
+                            <td>{{ $roster->shift->site->name }}</td>
+                            <td>{{ $roster->shift->start_time }}</td>
+                            <td>{{ $roster->shift->end_time }}</td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
 
                 <div style="text-align: center">
-                    {!! $attendances->render() !!}
+                    {!! $rosters->render() !!}
                 </div>
             </div>
         </div>

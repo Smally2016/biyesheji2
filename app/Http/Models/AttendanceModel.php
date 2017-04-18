@@ -173,4 +173,24 @@ class AttendanceModel extends BaseModel
         }
         return $word;
     }
+
+    public function isOut()
+    {
+        return $this->status == self::MODE_OUT;
+    }
+
+    public function isIn()
+    {
+        return $this->status == self::MODE_IN;
+    }
+
+    public function getMode()
+    {
+        return $this->mode;
+    }
+
+    public function getModeTextAttribute()
+    {
+        return $this->getMode() == self::MODE_IN ? '上班' : '下班';
+    }
 }

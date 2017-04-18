@@ -12,6 +12,7 @@ class AttendanceTableSeeder extends Seeder
      */
     public function run()
     {
+        $date_now = \Carbon\Carbon::now();
         $rosters = \App\Http\Models\RosterModel::all();
         foreach ($rosters as $roster) {
             $employee_id = $roster->employee_id;
@@ -31,30 +32,36 @@ class AttendanceTableSeeder extends Seeder
 
             $date = $roster->date;
 
+
             $start_time = $date . ' ' . $shift->start_time;
             $start_time = \Carbon\Carbon::parse($start_time)->addMinute(rand(-30, 20));
             $end_time = \Carbon\Carbon::parse($start_time)->addHour($shift->hour)->addMinute(rand(-30, 20));
-            \App\Http\Models\AttendanceModel::create([
-                'employee_id' => $employee_id,
-                'shift_id' => $shift_id,
-                'department_id' => $department_id,
-                'site_id' => $site_id,
-                'date_time' => $start_time->toDateTimeString(),
-                'duty_date' => $date,
-                'status' => 1,
-                'mode' => \App\Http\Models\AttendanceModel::MODE_IN,
-            ]);
 
-            \App\Http\Models\AttendanceModel::create([
-                'employee_id' => $employee_id,
-                'shift_id' => $shift_id,
-                'department_id' => $department_id,
-                'site_id' => $site_id,
-                'date_time' => $end_time->toDateTimeString(),
-                'duty_date' => $date,
-                'status' => 1,
-                'mode' => \App\Http\Models\AttendanceModel::MODE_IN,
-            ]);
+            if (\Carbon\Carbon::parse($start_time)->lte($date_now)) {
+                \App\Http\Models\AttendanceModel::create([
+                    'employee_id' => $employee_id,
+                    'shift_id' => $shift_id,
+                    'department_id' => $department_id,
+                    'site_id' => $site_id,
+                    'date_time' => $start_time->toDateTimeString(),
+                    'duty_date' => $date,
+                    'status' => 1,
+                    'mode' => \App\Http\Models\AttendanceModel::MODE_IN,
+                ]);
+            }
+
+            if (\Carbon\Carbon::parse($end_time)->lte($date_now)) {
+                \App\Http\Models\AttendanceModel::create([
+                    'employee_id' => $employee_id,
+                    'shift_id' => $shift_id,
+                    'department_id' => $department_id,
+                    'site_id' => $site_id,
+                    'date_time' => $end_time->toDateTimeString(),
+                    'duty_date' => $date,
+                    'status' => 1,
+                    'mode' => \App\Http\Models\AttendanceModel::MODE_OUT,
+                ]);
+            }
         }
     }
 }
