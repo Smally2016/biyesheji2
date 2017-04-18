@@ -1,12 +1,18 @@
 <?php namespace App\Http\Controllers;
 
+use App\Helpers\DateHelper;
 use App\Http\Models\AttendanceModel;
+use App\Http\Models\DepartmentModel;
 use App\Http\Models\EmployeeModel;
+use App\Http\Models\LeaveModel;
+use App\Http\Models\LeaveTypeModel;
 use App\Http\Models\RosterModel;
 use App\Http\Models\ShiftModel;
+use App\Http\Models\SiteModel;
 use App\Http\Models\UserModel;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Request;
 
 class MobileController extends Controller
 {
@@ -76,23 +82,24 @@ class MobileController extends Controller
         ]);
     }
 
-    public function getAttendance()
+    public function getReport()
     {
         /** @var UserModel $user */
         $user = \Auth::user();
         /** @var EmployeeModel $employee */
         $employee = $user->employee;
+        $employee_id = $employee->employee_id;
 
         $selected_week = Request::has('week') ? Request::get('week') : null;
         if ($selected_week) {
             $selected_week = $selected_week < 10 ? '0' . $selected_week : $selected_week;
-        }else{
+        } else {
             $selected_week = DateHelper::getCurrentWeek();
         }
         $selected_department = Request::get('department_id') ?: 0;
         $selected_site = Request::get('site_id') ?: 0;
         $selected_year = Request::get('year') ?: date('Y');
-        $selected_employees = Request::get('selected_employees') ?: [];
+        $selected_employees = [$employee_id];
         $start_date = date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1));
         $end_date = date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 7));
 
@@ -160,14 +167,16 @@ class MobileController extends Controller
                 }
             }
         }
-        $employees = EmployeeModel::whereIn('employee_id', $arr)->get();
+        $employees = EmployeeModel::where([
+            'employee_id' => $employee_id
+        ])->whereIn('employee_id', $arr)->get();
 
         $all_employees = EmployeeModel::where('status', 1)->orderBy('name', 'asc')->get();
 
         $departments = DepartmentModel::where('status', 1)->get();
         $sites = SiteModel::where('status', 1)->get();
         $leaves = LeaveTypeModel::where('status', 1)->get();
-        return view('attendance.weekly')->with([
+        return view('user.report.report')->with([
             'departments' => $departments,
             'sites' => $sites,
             'selected_year' => $selected_year,
@@ -178,20 +187,22 @@ class MobileController extends Controller
             'all_employees' => $all_employees,
             'selected_employees' => $selected_employees,
             'leaves' => $leaves,
-            'current_week' => DateHelper::getCurrentWeek()
-        ]);
-
-        $attendances = $employee->attendances()->orderBy('attendance_id', 'desc')->paginate();
-        return view('user.attendance.attendance', [
-            'attendances' => $attendances
+            'current_week' => DateHelper::getCurrentWeek(),
+            'employee' => $employee,
         ]);
     }
 
-
-    public function getReport()
+    public function getAttendance()
     {
+        /** @var UserModel $user */
+        $user = \Auth::user();
+        /** @var EmployeeModel $employee */
+        $employee = $user->employee;
 
-
+        $attendances = $employee->attendances()->orderBy('attendance_id', 'desc')->paginate();
+        return view('user.attendance.attendance', [
+            'attendances' => $attendances,
+        ]);
     }
 
     public function updatePassowrd()
@@ -199,6 +210,18 @@ class MobileController extends Controller
         $user = Auth::user();
 
 
+    }
+
+    public function getProfile()
+    {
+        /** @var UserModel $user */
+        $user = \Auth::user();
+        /** @var EmployeeModel $employee */
+        $employee = $user->employee;
+        return view('user.profile.profile', [
+            'user' => $user,
+            'employee' => $employee,
+        ]);
     }
 
 }

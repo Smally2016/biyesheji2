@@ -5,6 +5,9 @@ use Carbon\Carbon;
 class ShiftModel extends BaseModel
 {
 
+    const STATUS_DELETED = 0;
+    const STATUS_NORMAL = 1;
+
     protected $table = 'shifts';
     protected $primaryKey = 'shift_id';
 

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.mobile_layout')
 
 @section('header')
     <title xmlns="http://www.w3.org/1999/html">Attendance Weekly Report | ADP Center WAOS&trade;</title>
@@ -77,15 +77,6 @@
 
                         </div>
 
-                        <div class="form-group col-lg-6">
-                            <label> Employee:</label>
-                            <select class="form-control select2" name="selected_employees[]" id="department"
-                                    multiple="multiple">
-                                <option value="{{$employee->employee_id}}">{{$employee->name}}</option>
-                            </select>
-
-                        </div>
-
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
@@ -96,12 +87,14 @@
             </div><!-- /.box-body -->
         </div><!-- /.box -->
 
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-body">
-                <table class="table table-striped table-hover cell-border" id="data_table" class="display"
-                       cellspacing="0"
-                       width="100%">
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                排班表
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped b-t b-light">
                     <thead>
                     <tr>
                         <th>Name</th>
@@ -113,7 +106,7 @@
                         <th>Total</th>
                     </tr>
                     </thead>
-                    <tbody style="font-size: 12px">
+                    <tbody>
                     @foreach($employees as $employee)
                         <tr>
                             <td>
@@ -265,42 +258,17 @@
 
                     </tbody>
                 </table>
-            </div><!-- /.box-body -->
-        </div><!-- /.box -->
+            </div>
+        </div>
 
     </section><!-- /.content -->
-    <!-- Modal -->
-    <div id="leaveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Apply Leave</h4>
-                </div>
-                <div class="modal-body">
-                    <select class="form-control">
-                        @foreach($leaves as $leave)
-                            <option>{{$leave->name}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary center-block" data-dismiss="modal">Apply</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
 @endsection
 
 
 @section('js')
     <script src="{{asset('js/select2.min.js')}}"></script>
     <script>
-        var title = 'Attendance Weekly Report | ADP Center WAOS&trade;  Week {{$selected_week}} {{date('Y')}}';
-
         $('#data_table').DataTable({
             dom: 'T<"clear">lfrtip<"clear spacer">T',
             tableTools: {

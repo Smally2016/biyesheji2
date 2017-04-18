@@ -54,4 +54,13 @@ class ShiftController extends Controller
         ]);
 
     }
+
+    public function deleteShift($id)
+    {
+        /** @var ShiftModel $shift */
+        $shift = ShiftModel::find($id);
+        $shift->update([
+            'status' => ShiftModel::STATUS_DELETED
+        ]);
+    }
 }

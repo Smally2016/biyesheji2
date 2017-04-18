@@ -1,5 +1,12 @@
 @extends('layout.master')
 
+@push('menu')
+<li class="dropdown tasks-menu">
+    <a href="/m/profile">
+        <i class="fa fa-user"></i>
+    </a>
+</li>
+@endpush
 
 @section('aside')
     <!-- Left side column. contains the sidebar -->
@@ -32,6 +39,12 @@
                     <a href="/m/reports">
                         <i class="fa fa-area-chart"></i>
                         <span>周报</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/m/profile">
+                        <i class="fa fa-area-chart"></i>
+                        <span>个人资料</span>
                     </a>
                 </li>
             </ul>
