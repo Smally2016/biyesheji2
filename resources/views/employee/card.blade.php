@@ -10,12 +10,12 @@
     <section class="content-header">
         <h1>
             员工
-            <small>Card</small>
+            <small>员工卡</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/employee/card">Employee</a></li>
-            <li class="active">Card</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/employee/card">员工</a></li>
+            <li class="active">员工卡</li>
         </ol>
     </section>
 
@@ -29,11 +29,11 @@
                 <table id="user_table" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>NRIC</th>
-                        <th>Mobile</th>
-                        <th>URL</th>
-                        <th>QR</th>
+                        <th>姓名</th>
+                        <th>身份证号</th>
+                        <th>手机号码</th>
+                        <th>员工卡链接</th>
+                        <th>二维码</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -46,12 +46,12 @@
                             @if($employee -> secret == null)
                                 <td id="employee{{$employee->employee_id}}"><a class="btn btn-primary btn-xs"
                                                                                id="button{{$employee->employee_id}}"
-                                                                               onclick="generateQR('{{$employee -> employee_id}}','{{$employee -> secret}}')">Generate</a>
+                                                                               onclick="generateQR('{{$employee -> employee_id}}','{{$employee -> secret}}')">生成二维码</a>
                                 </td>
                             @else
                                 <td id="employee{{$employee->employee_id}}"><a class="btn btn-primary btn-xs"
                                                                                id="button{{$employee->employee_id}}"
-                                                                               onclick="generateQR('{{$employee -> employee_id}}','{{$employee -> secret}}')">Show</a>
+                                                                               onclick="generateQR('{{$employee -> employee_id}}','{{$employee -> secret}}')">展示二维码</a>
                                 </td>
                             @endif
                         </tr>

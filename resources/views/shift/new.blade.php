@@ -10,13 +10,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Shift
-        <small>New</small>
+        工作时间段
+        <small>新增</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="/shift/list">Shift</a></li>
-        <li class="active">New</li>
+        <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a href="/shift/list">工作时间段</a></li>
+        <li class="active">新增</li>
     </ol>
 </section>
 
@@ -44,7 +44,7 @@
                 {{csrf_field()}}
                 <div class="box-body">
                     <div class="form-group col-sm-6">
-                        <label>Department</label>
+                        <label>部门</label>
                         <select class="form-control" name="department_id" required id="department" onclick="getSite()">
                             @foreach($departments as $department)
                                 <option value="{{$department->department_id}}">{{$department->name}}</option>
@@ -52,33 +52,33 @@
                         </select>
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>Site</label>
+                        <label>工作地点</label>
                         <select class="form-control" name="site_id" required id="site">
 
                         </select>
                     </div>
                     <div class="form-group  col-sm-6">
-                        <label for="start_time">Start Time</label>
+                        <label for="start_time">开始时间</label>
                         <input type="time" class="form-control" id="start_time" name="start_time" value="{{old('start_time')}}" required>
                     </div>
 
                     <div class="form-group  col-sm-3">
-                        <label for="hour">Duration Hour</label>
+                        <label for="hour">工作时间(小时)</label>
                         <input type="number" class="form-control" id="hour" name="hour" value="{{old('hour')}}" min="0" max=24 required>
                     </div>
                     <div class="form-group  col-sm-3">
-                        <label for="minute">Duration Minute</label>
+                        <label for="minute">工作时间(分钟)</label>
                         <input type="number" class="form-control" id="minute" name="minute" value="{{old('minute')}}" min=0 max=59>
                     </div>
 
                     <div class="form-group col-sm-12">
-                        <label>Remark</label>
+                        <label>备注</label>
                         <textarea class="form-control" rows="3" name="remark">{{old('remark')}}</textarea>
                     </div>
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary center-block">Create</button>
+                    <button type="submit" class="btn btn-primary center-block">创建</button>
                 </div>
             </form>
         </div><!-- /.box-body -->

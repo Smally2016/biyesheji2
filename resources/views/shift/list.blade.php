@@ -9,13 +9,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Shift
-        <small>List</small>
+        工作时间段
+        <small>工作时间段列表</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="/shift/list">Shift</a></li>
-        <li class="active">List</li>
+        <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a href="/shift/list">工作时间段</a></li>
+        <li class="active">工作时间段列表</li>
     </ol>
 </section>
 
@@ -28,14 +28,14 @@
             <table id="table" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                    <th>Department</th>
-                    <th>Site</th>
-                    <th>Start Time</th>
-                    <th>Duration Hour</th>
-                    <th>Duration Minute</th>
-                    <th>End Time</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>部门</th>
+                    <th>工作地点</th>
+                    <th>开始时间</th>
+                    <th>工作时间(小时)</th>
+                    <th>工作时间(分钟)</th>
+                    <th>结束时间</th>
+                    <th>编辑</th>
+                    <th>删除</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -51,10 +51,10 @@
                         <td>{{\Carbon\Carbon::parse($shift->minute)->addHour($shift->hour)->addMinute($shift->minute)->toTimeString()}}</td>
 --}}
                         <td>
-                            <a href="/shift/edit/{{$shift->shift_id}}" class="btn btn-xs btn-warning" target="_blank">Edit</a>
+                            <a href="/shift/edit/{{$shift->shift_id}}" class="btn btn-xs btn-warning" target="_blank">编辑</a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-xs btn-danger">Delete</a>
+                            <a href="" class="btn btn-xs btn-danger">删除</a>
                         </td>
                     </tr>
                 @endforeach

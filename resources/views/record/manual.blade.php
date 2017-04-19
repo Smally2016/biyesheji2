@@ -10,13 +10,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Record
-            <small>Manual Check In/Out</small>
+            记录
+            <small>手动补卡</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/record/">Record</a></li>
-            <li class="active">Manual Check In/Out</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/record/">记录</a></li>
+            <li class="active">手动补卡</li>
         </ol>
     </section>
 
@@ -30,7 +30,7 @@
                 <div class="box-body">
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Employee:</label>
+                        <label> 员工:</label>
                         <select class="form-control  select2" name="employee_id" id="employee" onchange="getSite()">
                             @foreach($employees as $employee)
                                 <option value="{{$employee->employee_id}}">{{$employee->name}} ({{$employee->nric}})
@@ -40,29 +40,29 @@
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label for="date_time">Check In/Out Date Time:</label>
+                        <label for="date_time">补卡日期和时间</label>
                         <input type="text" class="form-control" id="date_time" required name="date_time">
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Site:</label>
+                        <label> 工作地点</label>
                         <select class="form-control" name="site_id" required id="site" onchange="getShift()">
 
                         </select>
                     </div>
 
+                    {{--<div class="form-group col-lg-offset-4 col-lg-4">--}}
+                        {{--<label for="duty">工作日</label>--}}
+                        {{--<input type="text" class="form-control" id="duty_date" required name="duty_date">--}}
+                    {{--</div>--}}
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label for="duty">Duty Date:</label>
-                        <input type="text" class="form-control" id="duty_date" required name="duty_date">
-                    </div>
-                    <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Shift:</label>
+                        <label>工作时间段</label>
                         <select class="form-control" name="shift_id" required id="shift">
 
                         </select>
                     </div>
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Mode:</label>
+                        <label> 补卡类型</label>
                         <select class="form-control" name="mode">
                             @foreach(\App\Helpers\AttendanceHelper::$modes as $key => $mode))
                             <option value="{{$key}}">{{$mode}}</option>
@@ -72,7 +72,7 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary center-block">Insert</button>
+                    <button type="submit" class="btn btn-primary center-block">添加</button>
 
                 </div>
             </form>
@@ -84,16 +84,16 @@
                 <table class="table table-striped table-hover ">
                     <thead>
                     <tr>
-                        <th>Date Time</th>
-                        <th>Employee ID</th>
-                        <th>NRIC</th>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Site</th>
-                        <th>Duty Date</th>
-                        <th>Shift</th>
-                        <th>In / Out</th>
-                        <th>Delete</th>
+                        <th>补卡日期时间</th>
+                        <th>员工</th>
+                        <th>身份证号</th>
+                        <th>姓名</th>
+                        <th>部门</th>
+                        <th>工作地点</th>
+                        {{--<th>工作日</th>--}}
+                        <th>工作时间段</th>
+                        <th>补卡类型</th>
+                        <th>删除</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -105,7 +105,7 @@
                             <td>{{$record->employee->name}}</td>
                             <td>{{$record->department->name}}</td>
                             <td>{{$record->site->name}}</td>
-                            <td>{{\Carbon\Carbon::parse($record->duty_date)->format('d/m/Y')}}</td>
+{{--                            <td>{{\Carbon\Carbon::parse($record->duty_date)->format('d/m/Y')}}</td>--}}
                             <td>{{$record->shift->getName()}}</td>
                             <td>{{\App\Helpers\AttendanceHelper::$modes[$record->mode]}}</td>
 

@@ -9,11 +9,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Roster
+            排班
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Roster</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">排班</li>
         </ol>
     </section>
 
@@ -27,7 +27,7 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-sm-6">
-                            <label> Year:</label>
+                            <label> 年:</label>
                             <select class="form-control "
                                     name="year" id="year" onchange="getWeeks()">
                                 @for($i = date('Y')-5; $i <= date('Y'); $i++)
@@ -44,13 +44,13 @@
 
                         </div>
                         <div class="form-group col-sm-6">
-                            <label> Week:</label>
+                            <label> 周:</label>
                             <select class="form-control" name="week" id="week">
 
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label> Site:</label>
+                            <label> 工作地点:</label>
                             <select class="form-control" name="site_id">
                                 @foreach($sites as $site)
                                     @if($selected_site == $site->site_id)
@@ -68,7 +68,7 @@
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary center-block">Generate</button>
+                        <button type="submit" class="btn btn-primary center-block">查找</button>
 
                     </div>
                 </form>
@@ -79,7 +79,7 @@
         <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    Shift: <b>{{$shift->getName()}}</b> Department: <b>{{$shift->department->name}}</b> Site:
+                    工作时间: <b>{{$shift->getName()}}</b>&nbsp;&nbsp;&nbsp;&nbsp; 部门: <b>{{$shift->department->name}}</b>&nbsp;&nbsp;&nbsp;&nbsp; 工作地点:
                     <b>{{$shift->site->name}}</b>
 
                 </div>
@@ -87,10 +87,10 @@
                     <table class="table table-striped table-hover table-responsive">
                         <thead>
                         <tr>
-                            <th>S/NO</th>
-                            <th>NRIC</th>
-                            <th>Name</th>
-                            <th>Title</th>
+                            <th>编号</th>
+                            <th>身份证号</th>
+                            <th>姓名</th>
+                            <th>职位</th>
                             <?php $start_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1)))->addDay(-1) ?>
                             @for($i = 0; $i < 7; $i++)
                                 <th>{{$start_date->addDay(1)->format('d/m')}}({{$start_date->format('D')}})</th>
@@ -120,7 +120,7 @@
                                                 <h4 style="margin: 0"><span
                                                             id="work_{{$shift->shift_id}}_{{$employee->employee_id}}_{{$start_date->format('Y-m-d')}}"
                                                             class="label label-success work text-center center-block">
-                                                Work
+                                                工作
                                             </span></h4>
                                             @endif
                                         @endforeach
@@ -159,7 +159,7 @@
                             </select>
                         </div>
                         <div class="col-sm-1">
-                            <button type="submit" class="btn btn-primary">Add</button>
+                            <button type="submit" class="btn btn-primary">添加</button>
                         </div>
                     </form>
                 </div>

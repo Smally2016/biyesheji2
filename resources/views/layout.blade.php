@@ -20,9 +20,9 @@
                     <ul class="treeview-menu">
                         <li id="tab_dashboard_inout"><a href="/dashboard/inout">打卡记录</a></li>
                     </ul>
-                    <ul class="treeview-menu">
-                        <li id="tab_dashboard_map"><a href="/dashboard/map">地图</a></li>
-                    </ul>
+                    {{--<ul class="treeview-menu">--}}
+                        {{--<li id="tab_dashboard_map"><a href="/dashboard/map">地图</a></li>--}}
+                    {{--</ul>--}}
                 </li>
                 <li class="treeview" id="tab_employee">
                     <a href="#">

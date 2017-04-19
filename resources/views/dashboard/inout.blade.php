@@ -9,13 +9,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Dashboard
-            <small>In & Out</small>
+            打卡记录面板
+            <small>签到 & 签退</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/dashboard/inout">Dashboard</a></li>
-            <li class="active">In & Out</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/dashboard/inout">打卡记录面板</a></li>
+            <li class="active">签到 & 签退</li>
         </ol>
     </section>
 

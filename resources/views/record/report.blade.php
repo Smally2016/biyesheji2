@@ -12,12 +12,12 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            In & Out Report
+            打卡记录
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/record/report">In & Out </a></li>
-            <li class="active">Report</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/record/report">打卡 </a></li>
+            <li class="active">记录</li>
         </ol>
     </section>
 
@@ -31,14 +31,14 @@
                 <div class="box-body">
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label for="date_range">Date:</label>
+                        <label for="date_range">日期:</label>
                         <input type="text" class="form-control" id="date_range" required name="date_range"
                                value="{{$date_range}}"
                         >
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Department:</label>
+                        <label> 部门:</label>
                         <select class="form-control" name="department_id">
                             <option value="0">All Department</option>
                             @foreach($departments as $department)
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Site:</label>
+                        <label> 工作地点:</label>
                         <select class="form-control" name="site_id">
                             <option value="0">All Site</option>
                             @foreach($sites as $site)
@@ -74,7 +74,7 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="status_record" {{$status_record}}>
-                                Hide Deleted Records
+                                隐藏已删除的报告
                             </label>
                         </div>
                     </div>
@@ -82,14 +82,14 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="mode_record" {{$mode_record}}>
-                                Display In/Out Only
+                                只展示打卡记录
                             </label>
                         </div>
                     </div>
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary center-block">Generate</button>
+                    <button type="submit" class="btn btn-primary center-block">查找</button>
 
                 </div>
             </form>
@@ -111,15 +111,15 @@
                 <table id="data_table" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th class="col-md-1">Date</th>
-                        <th class="col-md-1">Time</th>
-                        <th class="col-md-1">Employee ID</th>
-                        <th class="col-md-1">NRIC</th>
-                        <th class="col-md-2">Name</th>
-                        <th class="col-md-2">Department</th>
-                        <th class="col-md-1">Title</th>
-                        <th class="col-md-1">Site</th>
-                        <th class="col-md-1">In/Out</th>
+                        <th class="col-md-1">日期</th>
+                        <th class="col-md-1">时间</th>
+                        <th class="col-md-1">员工ID</th>
+                        <th class="col-md-2">身份证号</th>
+                        <th class="col-md-1">姓名</th>
+                        <th class="col-md-1">部门</th>
+                        <th class="col-md-1">职位</th>
+                        <th class="col-md-2">工作地点</th>
+                        <th class="col-md-1">签退/签到</th>
                     </tr>
                     </thead>
                     <tbody>

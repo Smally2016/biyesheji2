@@ -10,13 +10,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Record
-            <small>Edit</small>
+            记录
+            <small>编辑</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/record/">Record</a></li>
-            <li class="active">Edit</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/record/">记录</a></li>
+            <li class="active">编辑</li>
         </ol>
     </section>
 
@@ -30,15 +30,15 @@
                 <div class="box-body">
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label for="date_range">Calendar Date:</label>
+                        <label for="date_range">日期</label>
                         <input type="text" class="form-control" id="date_range" required name="date_range"
                                value="{{$date_range}}">
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Department:</label>
+                        <label> 部门:</label>
                         <select class="form-control" name="department_id">
-                            <option value="0">All Department</option>
+                            <option value="0">所有部门</option>
                             @foreach($departments as $department)
                                 @if($selected_department == $department->department_id)
                                     <option value="{{$department->department_id}}"
@@ -53,9 +53,9 @@
                     </div>
 
                     <div class="form-group col-lg-offset-4 col-lg-4">
-                        <label> Site:</label>
+                        <label> 工作地点:</label>
                         <select class="form-control" name="site_id">
-                            <option value="0">All Site</option>
+                            <option value="0">所有地点</option>
                             @foreach($sites as $site)
                                 @if($selected_site == $site->site_id)
                                     <option value="{{$site->site_id}}"
@@ -73,7 +73,7 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="deleted_record" {{$deleted_record}}>
-                                Hide Deleted Records
+                                隐藏已删除的记录
                             </label>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary center-block">Generate</button>
+                    <button type="submit" class="btn btn-primary center-block">查找</button>
 
                 </div>
             </form>
@@ -93,15 +93,15 @@
                 <table class="table table-striped table-hover ">
                     <thead>
                     <tr>
-                        <th>Date Time</th>
-                        <th>NRIC</th>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Site</th>
-                        <th>In / Out</th>
-                        <th>Duty Date</th>
-                        <th>Shift</th>
-                        <th>Delete</th>
+                        <th>日期</th>
+                        <th>身份证号</th>
+                        <th>姓名</th>
+                        <th>部门</th>
+                        <th>工作地点</th>
+                        <th>补卡类型</th>
+                        {{--<th>工作日</th>--}}
+                        <th>工作时间段</th>
+                        <th>删除</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -120,26 +120,26 @@
                                     @endforeach
                                 </select>
                             </td>
-                            <td>
-                                <select class="form-control input-sm" id="duty_date_{{$record->attendance_id}}"
-                                        onchange="changeDutyDate('{{$record->attendance_id}}')">
-                                    @if($record->duty_date == '0000-00-00')
-                                        <option>Select</option>
-                                    @endif
-                                    {!! $last = \Carbon\Carbon::parse($record->date_time)->addDay(-1) !!}
-                                    {!! $current = \Carbon\Carbon::parse($record->date_time) !!}
-                                    {!! $next = \Carbon\Carbon::parse($record->date_time)->addDay(1) !!}
-                                    <option value="{{$last->format('Y-m-d')}}" {{$record->duty_date == $last->format('Y-m-d')?'selected':''}}>{{ $last->format('d/m')}}
-                                        P
-                                    </option>
-                                    <option value="{{$current->format('Y-m-d')}}" {{$record->duty_date == $current->format('Y-m-d')?'selected':''}}>{{\Carbon\Carbon::parse($record->date_time)->format('d/m')}}
-                                        S
-                                    </option>
-                                    <option value="{{$next->format('Y-m-d')}}" {{$record->duty_date == $next->format('Y-m-d')?'selected':''}}>{{\Carbon\Carbon::parse($record->date_time)->addDay(1)->format('d/m')}}
-                                        N
-                                    </option>
-                                </select>
-                            </td>
+                            {{--<td>--}}
+                                {{--<select class="form-control input-sm" id="duty_date_{{$record->attendance_id}}"--}}
+                                        {{--onchange="changeDutyDate('{{$record->attendance_id}}')">--}}
+                                    {{--@if($record->duty_date == '0000-00-00')--}}
+                                        {{--<option>Select</option>--}}
+                                    {{--@endif--}}
+                                    {{--{!! $last = \Carbon\Carbon::parse($record->date_time)->addDay(-1) !!}--}}
+                                    {{--{!! $current = \Carbon\Carbon::parse($record->date_time) !!}--}}
+                                    {{--{!! $next = \Carbon\Carbon::parse($record->date_time)->addDay(1) !!}--}}
+                                    {{--<option value="{{$last->format('Y-m-d')}}" {{$record->duty_date == $last->format('Y-m-d')?'selected':''}}>{{ $last->format('d/m')}}--}}
+                                        {{--P--}}
+                                    {{--</option>--}}
+                                    {{--<option value="{{$current->format('Y-m-d')}}" {{$record->duty_date == $current->format('Y-m-d')?'selected':''}}>{{\Carbon\Carbon::parse($record->date_time)->format('d/m')}}--}}
+                                        {{--S--}}
+                                    {{--</option>--}}
+                                    {{--<option value="{{$next->format('Y-m-d')}}" {{$record->duty_date == $next->format('Y-m-d')?'selected':''}}>{{\Carbon\Carbon::parse($record->date_time)->addDay(1)->format('d/m')}}--}}
+                                        {{--N--}}
+                                    {{--</option>--}}
+                                {{--</select>--}}
+                            {{--</td>--}}
                             <td>
                                 <select class="form-control input-sm shift" id="shift_{{$record->attendance_id}}"
                                         onchange="changeShift('{{$record->attendance_id}}')">

@@ -63,19 +63,19 @@
                             </td>
                             <td>
                                 @if($employee->status==1)
-                                    <span class="label label-success">Current</span>
+                                    <span class="label label-success">在职</span>
                                 @elseif($employee->status ==0)
-                                    <span class="label label-danger">Resigned</span>
+                                    <span class="label label-danger">离职</span>
 
                                 @elseif($employee->status ==2)
-                                    <span class="label label-warning">Re-consider</span>
+                                    <span class="label label-warning">考虑中</span>
 
                                 @endif
                             </td>
 
                             <td>
                                 <a href="/employee/edit/{{$employee->employee_id}}" target="_blank"
-                                   class="btn btn-xs btn-warning">Edit</a>
+                                   class="btn btn-xs btn-warning">编辑</a>
                             </td>
                             {{--    <td>
                                     <a href="/employee/delete/{{$employee->employee_id}}"

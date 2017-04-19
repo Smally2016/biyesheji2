@@ -10,13 +10,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Attendance
-            <small>Weekly</small>
+            出勤
+            <small>周报</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/attendance/weekly">Attendance</a></li>
-            <li class="active">Weekly</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/attendance/weekly">出勤</a></li>
+            <li class="active">周报</li>
         </ol>
     </section>
 
@@ -30,7 +30,7 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-lg-6">
-                            <label> Year:</label>
+                            <label> 年:</label>
                             <select class="form-control "
                                     name="year" id="year" onchange="getWeeks()">
                                 @for($i = date('Y')-5; $i <= date('Y'); $i++)
@@ -47,7 +47,7 @@
 
                         </div>
                         <div class="form-group col-lg-6">
-                            <label> Week:</label>
+                            <label> 周:</label>
                             <select class="form-control" name="week" id="week">
                                 <option value="0">Loading</option>
                             </select>
@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="form-group col-lg-6">
-                            <label> Site:</label>
+                            <label> 工作地点:</label>
                             <select class="form-control" name="site_id" id="site">
                                 <option value="0">Loading</option>
                             </select>
@@ -78,7 +78,7 @@
                         </div>
 
                         <div class="form-group col-lg-6">
-                            <label> Employee:</label>
+                            <label> 员工:</label>
                             <select class="form-control select2" name="selected_employees[]" id="department"
                                     multiple="multiple">
                                 @foreach($all_employees as $employee)
@@ -153,7 +153,7 @@
                                     @if($rosters->count()>0)
                                         @foreach($rosters as $roster)
                                             <div class="bg-info">
-                                                <b>ROSTER:</b></br>
+                                                <b>排班:</b></br>
                                                 {{$roster->shift->site->name}}<br>
                                                 R.S: {{\Carbon\Carbon::parse($roster->shift->start_time)->format('H:i')}}
                                                 <br>
@@ -165,7 +165,7 @@
                                     @if($leave)
 
                                         <div class="bg-danger">
-                                            <b>LEAVE:</b></br>
+                                            <b>请假:</b></br>
                                             {{$leave->leaveType->name}}
                                             ({{\App\Http\Models\LeaveModel::$types[$leave->type_id]}})
                                         </div>
@@ -173,7 +173,7 @@
 
                                     @if($rosters->count()==0 and !$leave)
                                         <div class="bg-info text-center">
-                                            n.a.
+                                            无排班
                                         </div>
                                     @endif
 
@@ -186,7 +186,7 @@
                                                 @foreach($employee->getAttendance($site->site_id, $shift->shift_id, $duty_date) as $attendance)
                                                     <?php $shift = $attendance['in'] ? $attendance['in']->shift : $attendance['out']->shift ?>
                                                     <div>
-                                                        <b>ATTENDANCE:</b></br>
+                                                        <b>出勤:</b></br>
                                                         {{$shift->site->name}}<br>
                                                         S.S: {{\Carbon\Carbon::parse($shift->start_time)->format('H:i')}}
                                                         <br>
