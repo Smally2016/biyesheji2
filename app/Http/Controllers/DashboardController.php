@@ -9,8 +9,13 @@ class DashboardController extends Controller
 
     public function getInout()
     {
-        $records = AttendanceModel::where('status', 1)->orderBy('date_time', 'desc')->take(30)->get();
-        return view('dashboard.inout')->with('records', $records);
+        /** @var UserModel $user */
+        $user = \Auth::user();
+        if ($user->isAdmin()) {
+            $records = AttendanceModel::where('status', 1)->orderBy('date_time', 'desc')->take(30)->get();
+            return view('dashboard.inout')->with('records', $records);
+        }
+        return redirect('/m');
     }
 
     public function inoutAPI()
