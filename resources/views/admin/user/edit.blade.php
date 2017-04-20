@@ -8,13 +8,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            User
-            <small>Edit</small>
+            管理员
+            <small>编辑</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/user/list">User</a></li>
-            <li class="active">Edit</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/user/list">管理员</a></li>
+            <li class="active">编辑</li>
         </ol>
     </section>
 
@@ -43,29 +43,29 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-sm-6">
-                            <label for="username">Username</label>
+                            <label for="username">登录账号</label>
                             <input type="text" class="form-control" id="username" required name="username"
                                    value="{{$user->username}}" minlength="3">
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="name">Name</label>
+                            <label for="name">姓名</label>
                             <input type="text" class="form-control" id="name" required name="name"
                                    value="{{$user->name}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="email">Email</label>
+                            <label for="email">邮箱</label>
                             <input type="email" class="form-control" id="email" name="email" value="{{$user->email}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="mobile">Mobile</label>
+                            <label for="mobile">手机号</label>
                             <input type="text" class="form-control" id="mobile" name="phone" value="{{$user->phone}}">
                         </div>
                         <div class="form-group col-sm-12">
-                            <label>Remark</label>
+                            <label>备注</label>
                             <textarea class="form-control" rows="3" name="remark">{{$user->remark}}</textarea>
                         </div>
                         <div class="form-group col-sm-2">
-                            <label>Role</label>
+                            <label>角色</label>
                             <select class="form-control" name="is_admin" required>
                                 @foreach(\App\Http\Models\UserModel::$roles as $key=>$value)
                                     <option value="{{$key}}" {{$user->is_admin == $key?'selected':''}}>{{$value}}</option>
@@ -74,14 +74,14 @@
                         </div>
 
                         <div class="form-group  col-sm-6" style="clear: both">
-                            <label for="password">New Password</label>
+                            <label for="password">新密码</label>
                             <input type="password" class="form-control" id="password" name="password" value="" readonly onfocus="this.removeAttribute('readonly');">
                         </div>
 
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary center-block">Update</button>
+                        <button type="submit" class="btn btn-primary center-block">保存</button>
                     </div>
                 </form>
             </div><!-- /.box-body -->

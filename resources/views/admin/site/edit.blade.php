@@ -6,13 +6,13 @@
         <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Site
-        <small>Edit</small>
+        工作地点
+        <small>编辑</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="/admin/site/list">Site</a></li>
-        <li class="active">New</li>
+        <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a href="/admin/site/list">工作地点</a></li>
+        <li class="active">编辑</li>
     </ol>
 </section>
 
@@ -26,26 +26,26 @@
                 <input type="hidden" value="{{$site->site_id}}" name="site_id">
                 <div class="box-body">
                     <div class="form-group col-sm-offset-2 col-sm-8">
-                        <label>Site Name</label>
+                        <label>工作地点名称</label>
                         <input type="text" class="form-control" id="name" name="name" value="{{$site->name}}"
                                required>
                     </div>
                     <div class="form-group col-sm-offset-2 col-sm-8">
-                        <label>Address</label>
+                        <label>地址</label>
                         <input type="text" class="form-control" id="address" name="address" value="{{$site->address}}">
                     </div>
                     <div class="form-group col-sm-offset-2 col-sm-8">
-                        <label>Postal Code</label>
+                        <label>邮编</label>
                         <input type="text" class="form-control" id="postal" name="postal" value="{{$site->postal}}">
                     </div>
                     <div class="form-group col-sm-offset-2 col-sm-8">
-                        <label>Remark</label>
+                        <label>备注</label>
                         <textarea class="form-control" rows="3" name="remark">{{$site->remark}}</textarea>
                     </div>
                 </div><!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary center-block">Update</button>
+                    <button type="submit" class="btn btn-primary center-block">保存</button>
                 </div>
             </form>
         </div><!-- /.box-body -->

@@ -122,21 +122,21 @@
                         </a>
                         <ul class="treeview-menu">
                             <li id="tab_admin_site_list"><a href="/admin/site/list">查看所有</a></li>
-                            <li id="tab_admin_site_new"><a href="/admin/site/new"></a></li>
+                            <li id="tab_admin_site_new"><a href="/admin/site/new">新增工作地点</a></li>
                         </ul>
                     </li>
 
-                    <li class="treeview" id="tab_admin_reader">
-                        <a href="#">
-                            <i class="fa fa-desktop"></i>
-                            <span>Readers</span>
-                            <i class="fa fa-chevron-right pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li id="tab_admin_reader_list"><a href="/admin/reader/list">View All</a></li>
-                            <li id="tab_admin_reader_new"><a href="/admin/reader/new">Add New</a></li>
-                        </ul>
-                    </li>
+                    {{--<li class="treeview" id="tab_admin_reader">--}}
+                        {{--<a href="#">--}}
+                            {{--<i class="fa fa-desktop"></i>--}}
+                            {{--<span>Readers</span>--}}
+                            {{--<i class="fa fa-chevron-right pull-right"></i>--}}
+                        {{--</a>--}}
+                        {{--<ul class="treeview-menu">--}}
+                            {{--<li id="tab_admin_reader_list"><a href="/admin/reader/list">View All</a></li>--}}
+                            {{--<li id="tab_admin_reader_new"><a href="/admin/reader/new">Add New</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
 
                     <li class="treeview" id="tab_admin_employee_title">
                         <a href="#">

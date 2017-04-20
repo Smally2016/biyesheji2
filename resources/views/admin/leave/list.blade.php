@@ -9,13 +9,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Leave
-            <small>List</small>
+            请假类型管理
+            <small>列表</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/leave">Leave</a></li>
-            <li class="active">List</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/leave">请假管理</a></li>
+            <li class="active">列表</li>
         </ol>
     </section>
 
@@ -28,10 +28,10 @@
                 <table id="data_table" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>Leave Type</th>
-                        <th>Description</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>请假类型</th>
+                        <th>描述</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -40,10 +40,10 @@
                             <th>{{$leave->name}}</th>
                             <th>{{$leave->remark}}</th>
                             <th>
-                                <a target="_blank" href="/admin/leave/type/edit/{{$leave->leave_type_id}}" class="btn btn-xs btn-warning">Edit</a>
+                                <a target="_blank" href="/admin/leave/type/edit/{{$leave->leave_type_id}}" class="btn btn-xs btn-warning">编辑</a>
                             </th>
                             <th>
-                                <a href="/admin/leave/type/delete/{{$leave->leave_type_id}}" class="btn btn-xs btn-danger delete">Delete</a>
+                                <a href="/admin/leave/type/delete/{{$leave->leave_type_id}}" class="btn btn-xs btn-danger delete">删除</a>
                             </th>
                         </tr>
                     @endforeach

@@ -9,13 +9,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-
-            <small>List</small>
+            管理员
+            <small>列表</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/user">User</a></li>
-            <li class="active">List</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/user">管理员</a></li>
+            <li class="active">列表</li>
         </ol>
     </section>
 
@@ -28,14 +28,14 @@
                 <table class="table table-striped table-hover" id="data_table">
                     <thead>
                     <tr>
-                        <th>Username</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Mobile</th>
-                        <th>Department</th>
-                        <th>Remark</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>登录账号</th>
+                        <th>姓名</th>
+                        <th>邮箱</th>
+                        <th>手机</th>
+                        <th>部门</th>
+                        <th>备注</th>
+                        <th>编辑</th>
+                        <th>删除</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -44,9 +44,9 @@
                             <td>
                                 {{$user->username}}
                                 @if($user->is_admin == 1)
-                                    <span class="label label-info">Admin</span>
+                                    <span class="label label-info">管理员</span>
                                 @elseif($user->is_admin == 2)
-                                    <span class="label label-danger">Super Admin</span>
+                                    <span class="label label-danger">超级管理员</span>
                                 @endif
                             </td>
                             <td>{{$user->name}}</td>
@@ -69,10 +69,10 @@
                             <td>{{$user->remark}}</td>
                             <th>
                                 <a class="btn btn-xs btn-warning" href="/admin/user/edit/{{$user->user_id}}"
-                                   target="_blank">Edit</a>
+                                   target="_blank">编辑</a>
                             </th>
                             <th>
-                                <a class="btn btn-xs btn-danger">Delete</a>
+                                <a class="btn btn-xs btn-danger">删除</a>
                             </th>
                         </tr>
                     @endforeach

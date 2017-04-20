@@ -57,11 +57,11 @@
                             </td>
                             <td>
                                 <a href="/admin/department/edit/{{$department->department_id}}"
-                                   class="btn btn-xs btn-warning" target="_blank">Edit</a>
+                                   class="btn btn-xs btn-warning" target="_blank">编辑</a>
                             </td>
                             <td>
                                 <a href="/admin/department/delete/{{$department->department_id}}"
-                                   class="btn btn-xs btn-danger delete">Delete</a>
+                                   class="btn btn-xs btn-danger delete">删除</a>
                             </td>
                         </tr>
                     @endforeach

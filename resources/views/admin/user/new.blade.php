@@ -8,13 +8,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            User
-            <small>New</small>
+            管理员
+            <small>新增</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/user/list">User</a></li>
-            <li class="active">New</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/user/list">管理员</a></li>
+            <li class="active">新增</li>
         </ol>
     </section>
 
@@ -43,39 +43,39 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-sm-6">
-                            <label for="username">Username</label>
+                            <label for="username">登录账号</label>
                             <input type="text" class="form-control" id="username" required name="username"
                                    value="{{old('username')}}" minlength="3">
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="name">Name</label>
+                            <label for="name">姓名</label>
                             <input type="text" class="form-control" id="name" required name="name"
                                    value="{{old('name')}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="email">Email</label>
+                            <label for="email">邮箱</label>
                             <input type="email" class="form-control" id="email" name="email" value="{{old('email')}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="mobile">Mobile</label>
+                            <label for="mobile">手机号</label>
                             <input type="text" class="form-control" id="mobile" name="phone" value="{{old('phone')}}">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="password">Password</label>
+                            <label for="password">密码</label>
                             <input type="password" class="form-control" id="password" required name="password"
                                    value="{{old('password')}}" minlength="6">
                         </div>
                         <div class="form-group  col-sm-6">
-                            <label for="confirm_password">Confirm Password</label>
+                            <label for="confirm_password">确认密码</label>
                             <input type="password" class="form-control" id="confirm_password" required
                                    name="confirm_password" value="{{old('confirm_password')}}" minlength="6">
                         </div>
                         <div class="form-group col-sm-12">
-                            <label>Remark</label>
+                            <label>备注</label>
                             <textarea class="form-control" rows="3" name="remark">{{old('remark')}}</textarea>
                         </div>
                         <div class="form-group col-sm-2">
-                            <label>Role</label>
+                            <label>角色</label>
                             <select class="form-control" name="is_admin" required>
                                 @foreach(\App\Http\Models\UserModel::$roles as $key=>$value)
                                     <option value="{{$key}}">{{$value}}</option>
@@ -85,7 +85,7 @@
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary center-block">Create</button>
+                        <button type="submit" class="btn btn-primary center-block">新建</button>
                     </div>
                 </form>
             </div><!-- /.box-body -->

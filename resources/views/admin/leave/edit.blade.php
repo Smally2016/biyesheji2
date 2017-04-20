@@ -8,13 +8,13 @@
             <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Leave Type
-            <small>Edit</small>
+            请假类型管理
+            <small>编辑</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/admin/leave/type/list">Leave Type</a></li>
-            <li class="active">Edit</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="/admin/leave/type/list">请假类型管理</a></li>
+            <li class="active">编辑</li>
         </ol>
     </section>
 
@@ -29,18 +29,18 @@
                     <input type="hidden" value="{{$leave->leave_type_id}}" name="leave_type_id">
                     <div class="box-body">
                         <div class="form-group col-sm-offset-2 col-sm-8">
-                            <label>Leave Name</label>
+                            <label>假期名称</label>
                                 <input type="text" class="form-control" id="name" name="name" value="{{$leave->name}}"
                                        required>
                         </div>
                         <div class="form-group col-sm-offset-2 col-sm-8">
-                            <label>Description</label>
+                            <label>描述</label>
                             <textarea class="form-control" rows="3" name="remark">{{$leave->remark}}</textarea>
                         </div>
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary center-block">Update</button>
+                        <button type="submit" class="btn btn-primary center-block">保存</button>
                     </div>
                 </form>
             </div><!-- /.box-body -->

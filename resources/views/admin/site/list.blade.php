@@ -9,13 +9,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Site
-        <small>List</small>
+        工作地点
+        <small>列表</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="/admin/site/list">Site</a></li>
-        <li class="active">List</li>
+        <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a href="/admin/site/list">工作地点</a></li>
+        <li class="active">列表</li>
     </ol>
 </section>
 
@@ -28,12 +28,12 @@
             <table id="user_table" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                    <th>Site Name</th>
-                    <th>Address</th>
-                    <th>Postal Code</th>
-                    <th>Remarks</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>工作地点名称</th>
+                    <th>地址</th>
+                    <th>邮编</th>
+                    <th>备注</th>
+                    <th>编辑</th>
+                    <th>删除</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -44,10 +44,10 @@
                     <td>{{$site->postal}}</td>
                     <td>{{$site->remark}}</td>
                     <td>
-                        <a href="/admin/site/edit/{{$site->site_id}}" class="btn btn-xs btn-warning" target="_blank">Edit</a>
+                        <a href="/admin/site/edit/{{$site->site_id}}" class="btn btn-xs btn-warning" target="_blank">编辑</a>
                     </td>
                     <td>
-                        <a href="/admin/site/delete/{{$site->site_id}}" class="btn btn-xs btn-danger delete_button" onclick="">Delete</a>
+                        <a href="/admin/site/delete/{{$site->site_id}}" class="btn btn-xs btn-danger delete_button" onclick="">删除</a>
                     </td>
                 </tr>
                     @endforeach
