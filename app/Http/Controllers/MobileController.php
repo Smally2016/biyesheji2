@@ -69,7 +69,6 @@ class MobileController extends Controller
 
     public function getRosterList()
     {
-        //        8023lx1994
         //Smally2016
         /** @var UserModel $user */
         $user = \Auth::user();
