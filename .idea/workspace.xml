@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="Add">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/adp.iml" afterPath="$PROJECT_DIR$/.idea/adp.iml" />
+    <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +32,8 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#39#66#0#PHP" expanded="true" />
-              </folding>
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,21 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wechat.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wechat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/wechat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="253">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="230">
+              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -133,16 +127,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1058">
               <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobile_layout.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -228,13 +212,13 @@
         <option value="$PROJECT_DIR$/resources/views/user/report/report.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/wechat.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -325,9 +309,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="140" />
-    <option name="y" value="1073" />
+    <option name="y" value="1050" />
     <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -374,6 +358,60 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane" />
@@ -387,22 +425,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="shiftcon&#9;null&#9;null&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;usercon&#9;null&#9;null&#10;atten&#9;null&#9;null&#10;shift&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/ShiftModel.php&#10;rout&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;roster&#9;null&#9;null&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;mobi&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;employee&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;atte&#9;null&#9;null&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;shiftcon&#9;null&#9;null&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;usercon&#9;null&#9;null&#10;atten&#9;null&#9;null&#10;shift&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/ShiftModel.php&#10;roster&#9;null&#9;null&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;mobi&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;employee&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;atte&#9;null&#9;null&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/user" />
       <recent name="$PROJECT_DIR$/resources/views/user/roster" />
       <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
       <recent name="$PROJECT_DIR$/resources/views/user/attendance" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
+      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -640,7 +679,7 @@
       <workItem from="1492439857547" duration="4584000" />
       <workItem from="1492516032538" duration="10422000" />
       <workItem from="1492611328052" duration="1052000" />
-      <workItem from="1492865828882" duration="3147000" />
+      <workItem from="1492865828882" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -775,14 +814,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492534246067</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add wechat">
+      <created>1492870430825</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1492870430825</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64356000" />
+    <option name="totallyTimeSpent" value="64804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="1073" width="1440" height="829" extended-state="6" />
+    <frame x="140" y="1050" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -792,7 +838,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3586498" sideWeight="0.4914163" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31716418" sideWeight="0.4914163" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -851,20 +897,14 @@
     <MESSAGE value="Improve employee" />
     <MESSAGE value="Add mobile" />
     <MESSAGE value="Improve mobile user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve mobile user" />
+    <MESSAGE value="Add wechat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add wechat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/DepartmentTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/TitleTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
@@ -1157,14 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
@@ -1186,16 +1218,6 @@
         <state relative-caret-position="1541">
           <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,8 +1269,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/wechat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="253">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding />
         </state>
       </provider>
