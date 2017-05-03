@@ -181,8 +181,9 @@ class RecordController extends Controller
             $data['status'] = 2;
             $data['date_time'] = explode(' ', $data['date_time']);
             $data['date_time'] = DateHelper::dateSlashToDateDash($data['date_time'][0]) . ' ' . $data['date_time'][1];
-            $data['duty_date'] = DateHelper::dateSlashToDateDash($data['duty_date']);
+//            $data['duty_date'] = DateHelper::dateSlashToDateDash($data['duty_date']);
 
+            $data['duty_date'] = Carbon::parse($data['date_time'])->format('Y-m-d');
             $data['department_id'] = EmployeeModel::find($data['employee_id'])->department->first()->department_id;
             $attendance = new AttendanceModel();
             $attendance->create($data);

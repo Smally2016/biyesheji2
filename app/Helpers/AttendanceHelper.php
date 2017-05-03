@@ -5,10 +5,10 @@ class AttendanceHelper
 {
 
     public static $attendances = array(
-        0 => 'Deleted',
-        1 => 'Normal',
-        2 => 'Inserted',
-        3 => 'Edited',
+        0 => '已删除',
+        1 => '正常',
+        2 => '补卡',
+        3 => '更改过',
     );
 
     const F1 = 1;
@@ -19,9 +19,9 @@ class AttendanceHelper
     const F4 = 5;
 
     public static $modes = array(
-        AttendanceHelper::F1 => 'In',
-        AttendanceHelper::F2 => 'Out',
-        AttendanceHelper::NO_BUTTON => 'Access',
+        AttendanceHelper::F1 => '上班',
+        AttendanceHelper::F2 => '下班',
+        AttendanceHelper::NO_BUTTON => '普通打卡',
         AttendanceHelper::F3 => 'F3',
         AttendanceHelper::F4 => 'F4'
     );
