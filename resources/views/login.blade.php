@@ -29,12 +29,11 @@
       style="background-image: url('/image/waos_main_background_3.jpg');background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 <div class="login-box" style="margin-bottom: 0">
     <div class="login-logo">
-        <b style="text-shadow: 1px 1px white;font-size: 45px">ADP WAOS&trade;</b><br>
+        <b style="text-shadow: 1px 1px white;font-size: 45px">泰尼贸易</b><br>
     </div><!-- /.login-logo -->
 
 </div>
-<h3 style="text-shadow: 1px 1px white;white-space: nowrap;text-align: center">A Security Command Centre
-    Software</h3>
+<h3 style="text-shadow: 1px 1px white;white-space: nowrap;text-align: center">行走的考勤打卡机</h3>
 <div class="login-box" style="margin-top: 10px">
     <div class="login-box-body">
 
@@ -51,14 +50,14 @@
             </div>
             <div class="row">
                 <div class="col-xs-offset-4 col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div><!-- /.col -->
             </div>
         </form>
     </div><!-- /.login-box-body -->
     <div class="login-box-msg" style="padding-top: 30px">
-        <p style="text-shadow: 1px 1px white;">©2016 All Rights Reserved</p>
-        <p style="text-shadow: 1px 1px white;">ADP Centre Pte Ltd</p>
+        <p style="text-shadow: 1px 1px white;">©2017 All Rights Reserved</p>
+        <p style="text-shadow: 1px 1px white;">Tiny Traditional</p>
     </div>
 
 </div><!-- /.login-box -->

@@ -39,9 +39,9 @@
         <!-- Logo -->
         <a href="/" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b style="font-size: 13px">WAOS&trade;</b></span>
+            <span class="logo-mini"><b style="font-size: 13px">泰尼贸易考勤管理系统</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>WAOS&trade;</b></span>
+            <span class="logo-lg"><b>泰尼贸易考勤管理系统&trade;</b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -98,9 +98,9 @@
         @yield('body')
     </div><!-- /.content-wrapper -->
 
-    <footer class="main-footer">
-        @yield('footer')
-    </footer>
+    {{--<footer class="main-footer">--}}
+        {{--@yield('footer')--}}
+    {{--</footer>--}}
 
 </div><!-- ./wrapper -->
 

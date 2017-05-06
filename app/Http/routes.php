@@ -1,7 +1,9 @@
 <?php
 Route::get('/test', 'TestController@test');
 
-
+Route::get('/home', function (){
+    return view('web.web');
+});
 Route::get('/login', 'UserController@login');
 Route::post('/login', 'UserController@doLogin');
 Route::get('/check/{id}', 'EmployeeController@cardDetail');

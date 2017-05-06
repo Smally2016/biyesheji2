@@ -90,17 +90,17 @@
                 </li>
 
                 @if(\Illuminate\Support\Facades\Auth::user()->is_admin >= 1)
-                    <li class="header">管理员</li>
+                    <li class="header">超级管理员</li>
                     <li class="treeview" id="tab_admin_user">
                         <a href="#">
                             <i class="fa  fa-group"></i>
-                            <span>用户</span>
+                            <span>管理员管理</span>
                             <i class="fa fa-chevron-right pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
                             <li id="tab_admin_user_list"><a href="/admin/user/list" id="tab_admin_user_all">查看所有</a>
                             </li>
-                            <li id="tab_admin_user_new"><a href="/admin/user/new" id="tab_admin_user_new">增加新用户</a></li>
+                            <li id="tab_admin_user_new"><a href="/admin/user/new" id="tab_admin_user_new">增加新管理员</a></li>
                         </ul>
                     </li>
                     <li class="treeview" id="tab_admin_department">

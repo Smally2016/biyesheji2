@@ -54,7 +54,7 @@
                             <a href="/shift/edit/{{$shift->shift_id}}" class="btn btn-xs btn-warning" target="_blank">编辑</a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-xs btn-danger">删除</a>
+                            <a href="" onclick="confirm('确认删除该条信息？')" class="btn btn-xs btn-danger">删除</a>
                         </td>
                     </tr>
                 @endforeach

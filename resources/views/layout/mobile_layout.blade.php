@@ -57,9 +57,9 @@
 
 @section('footer')
 
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 1.0.0
-    </div>
-    <strong>Copyright &copy; 2014-2015 ADP Protection Services Pte Ltd</strong> All rights reserved.
+    {{--<div class="pull-right hidden-xs">--}}
+        {{--<b>Version</b> 1.0.0--}}
+    {{--</div>--}}
+    {{--<strong>Copyright &copy; 2017 ADP Protection Services Pte Ltd</strong> All rights reserved.--}}
 
 @endsection
