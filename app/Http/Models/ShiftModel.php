@@ -61,4 +61,19 @@ class ShiftModel extends BaseModel
     {
         return $this->mintue;
     }
+
+    public function getDepartmentId()
+    {
+        return $this->department_id;
+    }
+
+    public function getSiteId()
+    {
+        return $this->site_id;
+    }
+
+    public function getShiftId()
+    {
+        return $this->shift_id;
+    }
 }

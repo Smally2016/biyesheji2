@@ -24,20 +24,25 @@ class MobileController extends Controller
         /** @var EmployeeModel $employee */
         $employee = $user->employee;
 
-        $rosters = $employee->rosters()->with('shift')->where([
-            'date' => ['>', Carbon::now()->format('Y-m-d')]
-        ])->take(3)->get();
+        $rosters = $employee->rosters()->with('shift')->where(
+            'date', '>', Carbon::now()->format('Y-m-d')
+        )->take(2)->get();
 
         /** @var AttendanceModel $last_check */
-        $last_check = $employee->attendances()->orderBy('attendance_id', 'desc')->first();
+        $last_check = $employee->attendances()->orderBy('date_time', 'desc')->first();
         $current_check = $last_check ? $last_check->date_time : '';
 
         $in_out = '';
+        $this_time_in_out = '';
         if ($last_check->isIn()) {
             $in_out = '上班';
+            $this_time_in_out = '下班';
+            $mode = AttendanceModel::MODE_OUT;
         }
         if ($last_check->isOut()) {
             $in_out = '下班';
+            $this_time_in_out = '上班';
+            $mode = AttendanceModel::MODE_IN;
         }
 
 
@@ -45,26 +50,85 @@ class MobileController extends Controller
         if ($last_check && $last_check->isIn()) {
             /** @var ShiftModel $shift */
             $shift = $last_check->shift;
-            $working_time = Carbon::parse($current_check)
-                ->addHour($shift->getHour())
-                ->addMinute($shift->getMinute())
-                ->diffInMinutes(Carbon::parse($current_check));
-            $working_time = round($working_time / 60) . '小时' . ($working_time % 60) . '分';
+            $last_check_time = $last_check->getDateTime();
+            $working_time = Carbon::parse($last_check_time)
+                ->diffInMinutes(Carbon::now());
+
+            $working_time = floor($working_time / 60) . '小时' . ($working_time % 60) . '分';
 
         }
+
+        /** @var RosterModel $roster */
+        $roster = $employee->rosters()->where(
+            'date', '>', Carbon::now()->format('Y-m-d')
+        )->orderBy('date', 'asc')->first();
+
+        $remind = '无排班';
+        if ($roster) {
+            $remind = $roster->getDate();
+        }
+
+        $next_check_in = '无排班';
+        if ($roster) {
+            $shift = $roster->shift;
+            if ($last_check->isIn()) {
+                $next_check_in = $shift->getEndTime();
+            } else {
+                $next_check_in = $roster->getDate() . ' ' . $shift->start_time;
+            }
+        }
+
         return view('user.dashboard.dashboard', [
             'user' => $user,
             'rosters' => $rosters,
             'current_check' => $current_check,
             'in_out' => $in_out,
+            'this_time_in_out' => $this_time_in_out,
             'working_time' => $working_time,
+            'next_check_in' => $next_check_in,
+            'mode' => $mode,
         ]);
     }
 
-    public function checkIn()
+    public function checkIn(\Illuminate\Http\Request $request)
     {
+        /** @var UserModel $user */
+        $user = \Auth::user();
+        /** @var EmployeeModel $employee */
+        $employee = $user->employee;
 
+        $mode = $request->get('mode');
 
+        /** @var RosterModel $roster */
+        $roster = $employee->rosters()->where([
+            'date' => Carbon::now()->format('Y-m-d')
+        ])->first();
+
+        if ($roster) {
+            /** @var ShiftModel $shift */
+            $shift = $roster->shift;
+        } else {
+            /** @var DepartmentModel $department */
+            $department = $employee->department()->first();
+            $shift = $department->shifts()->first();
+        }
+
+        $department_id = $shift->getDepartmentId();
+        $shift_id = $shift->getShiftId();
+        $site_id = $shift->getSiteId();
+
+        AttendanceModel::create([
+            'mode' => $mode,
+            'department_id' => $department_id,
+            'site_id' => $site_id,
+            'shift_id' => $shift_id,
+            'employee_id' => $employee->getEmployeeId(),
+            'duty_date' => Carbon::now()->format('Y-m-d'),
+            'date_time' => Carbon::now()->format('Y-m-d H:i:s'),
+
+        ]);
+
+        return redirect('/m');
     }
 
     public function getRosterList()

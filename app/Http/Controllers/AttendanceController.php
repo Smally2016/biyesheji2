@@ -121,14 +121,14 @@ class AttendanceController extends Controller
         if ($department_id == 0) {
             $sites = SiteModel::where('status', 1)->orderBy('name', 'asc')->get();
 
-            $result[] = ['site_id' => 0, 'name' => 'All Site'];
+            $result[] = ['site_id' => 0, 'name' => '全部地点'];
             foreach ($sites as $site) {
                 $result[] = ['site_id' => $site->site_id, 'name' => $site->name];
             }
         } else {
             $department = DepartmentModel::find($department_id);
             $sites = $department->site()->orderBy('name', 'asc')->get();
-            $result[] = ['site_id' => 0, 'name' => 'All Site'];
+            $result[] = ['site_id' => 0, 'name' => '全部地点'];
             foreach ($sites as $site) {
                 $result[] = ['site_id' => $site->site_id, 'name' => $site->name];
             }

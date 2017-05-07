@@ -75,4 +75,9 @@ class DepartmentModel extends BaseModel
         return $this->employee()->where('status', EmployeeModel::CURRENT);
     }
 
+    public function getDepartmentId()
+    {
+        return $this->department_id;
+    }
+
 }

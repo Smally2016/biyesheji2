@@ -87,4 +87,9 @@ class RosterModel extends BaseModel {
 
 		return $result;
 	}
+
+	public function getDate()
+    {
+        return $this->date;
+	}
 }

@@ -33,9 +33,9 @@ class AttendanceTableSeeder extends Seeder
             $date = $roster->date;
 
 
-            $start_time = $date . ' ' . $shift->start_time;
-            $start_time = \Carbon\Carbon::parse($start_time)->addMinute(rand(-30, 20));
-            $end_time = \Carbon\Carbon::parse($start_time)->addHour($shift->hour)->addMinute(rand(-30, 20));
+            $start_time_temp = $date . ' ' . $shift->start_time;
+            $start_time = \Carbon\Carbon::parse($start_time_temp)->addMinute(rand(-30, 20));
+            $end_time = \Carbon\Carbon::parse($start_time_temp)->addHour($shift->hour)->addMinute(rand(-30, 20));
 
             if (\Carbon\Carbon::parse($start_time)->lte($date_now)) {
                 \App\Http\Models\AttendanceModel::create([
