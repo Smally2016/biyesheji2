@@ -34,8 +34,9 @@
     <ul class="nav navbar-nav ">
         <li class="active"><a href="javascript:;">公司简介<span class="sr-only">(current)</span></a></li>
         <li><a href="#about" class="scroll">关于我们</a></li>
-        <li><a href="#services" class="scroll">公司产品</a></li>
-        <li><a href="#work" class="scroll">团队优势</a></li>
+        <li><a href="#work" class="scroll">公司产品</a></li>
+        <li><a href="#advantage" class="scroll">团队优势</a></li>
+        <li><a href="#address" class="scroll">公司分布</a></li>
         <li><a href="#team" class="scroll">员工生活</a></li>
     </ul>
 
@@ -68,7 +69,7 @@
                 <li>
                     <img src="/images/banner2.jpg" alt="">
                     <div class="caption">
-                        <h3>社会贡献</h3>
+                        <h3>年度口号</h3>
                         <p>尊重人类与环境，倡导绿色、健康、便捷的生活理念，为每一个家庭带去幸福感。</p>
                     </div>
                 </li>
@@ -82,13 +83,13 @@
     <div class="about-setion" id="about">
         <div class="container">
 
-            <h2 class="tittle">About Us</h2>
+            <h2 class="tittle">关于我们</h2>
             <div class="about-grids">
                 <div class="col-md-3 about-grid-w3l-agileifo">
                     <div class="icons">
                         <i class="glyphicon glyphicon-cloud" aria-hidden="true"></i>
                     </div>
-                    <h4>Easy to customize</h4>
+                    <h4>易于定制</h4>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
@@ -96,7 +97,7 @@
                     <div class="icons">
                         <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
                     </div>
-                    <h4>Fresh and Clean</h4>
+                    <h4>致力环保</h4>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
@@ -104,7 +105,7 @@
                     <div class="icons">
                         <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
                     </div>
-                    <h4>Labore et dolore</h4>
+                    <h4>奉献社会</h4>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
@@ -112,7 +113,7 @@
                     <div class="icons">
                         <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
                     </div>
-                    <h4>Sed do eiusmod</h4>
+                    <h4>充满活力</h4>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
@@ -129,13 +130,13 @@
     <div class="work-section" id="work">
         <div class="container">
 
-            <h3 class="tittle">Recent Works</h3>
+            <h3 class="tittle">公司产品</h3>
             <ul class="simplefilter">
-                <li class="active" data-filter="all">All</li>
-                <li data-filter="1">Branding</li>
-                <li data-filter="2">Web</li>
-                <li data-filter="3">Logo Design</li>
-                <li data-filter="4">Photography</li>
+                <li class="active" data-filter="all">所有产品</li>
+                <li data-filter="1">食品类</li>
+                <li data-filter="2">鞋帽服饰</li>
+                <li data-filter="3">办公用品</li>
+                <li data-filter="4">机械</li>
 
             </ul>
             <div class="filtr-container">
@@ -269,80 +270,9 @@
             </div>
         </div>
     </div>
-    <!--services-->
-    <div class="services" id="services">
-        <div class="container">
-            <h3 class="tittle1"> Our Services</h3>
-            <div class="services-grids">
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>Branding</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-time" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>Web Design</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-signal" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>App Design</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="services-grids">
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>Logo Design</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>Branding</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-4 services-grid-w3layouts-agileits">
-                    <div class="icon-left">
-                        <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
-                    </div>
-                    <div class="ser-right">
-                        <h4>Development</h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!--services-->
-    <div class="what-section">
+
+    <!--advantages-->
+    <div class="what-section" id="advantage">
         <div class="container">
             <div class="what-grids">
                 <div class="col-md-6 test-list">
@@ -426,7 +356,7 @@
     </div>
 
     <!--team-->
-    <div class="team" id="team">
+    <div class="team" id="address">
         <div class="container">
             <h3 class="tittle3"> Our Team</h3>
             <div class="team-grids">
@@ -498,133 +428,18 @@
             </div>
         </div>
     </div>
-    <!--team-->
-    <div class="news-section" id="news">
-        <div class="container">
-            <h3 class="tittle">Latest News</h3>
-            <div class="news-grids wow fadeInRight animated" data-wow-delay=".5s">
-                <div class="col-md-4 new-grid">
-                    <img src="/images/n1.jpg" class="img-responsive"/>
-                </div>
-                <div class="col-md-8 new-grid1 hvr-bounce-to-right">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4><a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">Fusce euismod consequat
-                            ante Lorem ipsum dolor sit amet</a></h4>
-                    <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris.
-                        Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat
-                        eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
-                <div class="col-md-4 new-grid">
-                    <img src="/images/n2.jpg" class="img-responsive"/>
-                </div>
-                <div class="col-md-8 new-grid1 hvr-bounce-to-right">
-                    <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
-                    <h4><a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">Fusce euismod consequat
-                            ante Lorem ipsum dolor sit amet</a></h4>
-                    <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris.
-                        Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat
-                        eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!---news--->
-    <div class="testimonials wow bounceIn animated" data-wow-delay="0.4s"
-         style="visibility: visible; -webkit-animation-delay: 0.4s" id="testimonials">
-        <div class="container">
-            <h3 class="tittle1">Testimonials</h3>
-            <div class="test-monials">
-                <!-- start content_slider -->
-                <div id="owl-demo" class="owl-carousel">
-                    <div class="item">
-                        <div class="testmonial-text">
-                            <p>Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil
-                                molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur.
-                                Sed in lacus ut enim adipiscing aliquet. Nulla venena tis. In pede mi, aliquet sit amet,
-                                euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo
-                                dolor. </p>
-                            <img src="/images/t-1.jpg" class="img-responsive" alt=""/>
-                            <h4><a href="#">Robert Smith</a></h4>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="item">
-                        <div class="testmonial-text">
-                            <p>Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil
-                                molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur.
-                                Sed in lacus ut enim adipiscing aliquet. Nulla venena tis. In pede mi, aliquet sit amet,
-                                euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo
-                                dolor. </p>
-                            <img src="/images/t-2.jpg" class="img-responsive" alt=""/>
-                            <h4><a href="#">Mark Trand</a></h4>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="item">
-                        <div class="testmonial-text">
-                            <p>Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil
-                                molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur.
-                                Sed in lacus ut enim adipiscing aliquet. Nulla venena tis. In pede mi, aliquet sit amet,
-                                euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo
-                                dolor. </p>
-                            <img src="/images/t-1.jpg" class="img-responsive" alt=""/>
-                            <h4><a href="#">John Doe</a></h4>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                </div>
 
 
-            </div>
-        </div>
-    </div>
 </div>
 <!---- testmonials ---->
 
 </div>
-<div class="contact" id="contact">
-    <div class="container">
-        <h3 class="tittle1">Mail Us</h3>
-        <div class="contact-grids">
-            <div class="col-md-6 contact-grid-left">
-                <form action="#" method="post">
-                    <input type="text" name="Name" value="Name" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                    <input type="text" name="Phone" value="Phone" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Phone';}" required="">
-                </form>
-            </div>
-            <div class="col-md-6 contact-grid-left">
-                <form action="#" method="post">
-                    <input type="email" name="Email" value="Email" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                    <input type="text" name="Subject" value="Subject" onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-                </form>
-            </div>
-            <div class="clearfix"></div>
-            <form action="#" method="post">
-                <textarea type="text" name="Message" onfocus="this.value = '';"
-                          onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-                <input type="submit" value="Submit Now">
-            </form>
-        </div>
-        <div class="google-map">
-            <iframe src=""></iframe>
-        </div>
-    </div>
-</div>
+
 <!--footer-->
-<div class="copy-section">
+<div class="copy-section" style="background: white">
     <div class="container">
         <div class="footer-top">
-            <p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank"
-                                                                         href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            <p style="color: #666666">Copyright &copy; 2016.Tiny tradational All rights reserved.<a  href="javascript:;">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
             </p>
         </div>
     </div>
