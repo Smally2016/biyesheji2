@@ -19,31 +19,31 @@
                 <li class="header">主菜单</li>
                 <li>
                     <a href="/m">
-                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-star"></i>
                         <span>主页面</span>
                     </a>
                 </li>
                 <li>
                     <a href="/m/rosters">
-                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-star"></i>
                         <span>排班表</span>
                     </a>
                 </li>
                 <li>
                     <a href="/m/attendances">
-                        <i class="fa fa-calendar"></i>
+                        <i class="fa fa-star"></i>
                         <span>打卡记录</span>
                     </a>
                 </li>
                 <li>
                     <a href="/m/reports">
-                        <i class="fa fa-area-chart"></i>
+                        <i class="fa fa-star"></i>
                         <span>周报</span>
                     </a>
                 </li>
                 <li>
                     <a href="/m/profile">
-                        <i class="fa fa-area-chart"></i>
+                        <i class="fa fa-star"></i>
                         <span>个人资料</span>
                     </a>
                 </li>

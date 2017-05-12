@@ -10,13 +10,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Attendance
-            <small>Weekly</small>
+            考勤记录
+            <small>周报</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/attendance/weekly">Attendance</a></li>
-            <li class="active">Weekly</li>
+            <li><a href="/"><i class="fa fa-dashboard"></i> 主页</a></li>
+            <li><a href="/attendance/weekly">考勤记录</a></li>
+            <li class="active">周报</li>
         </ol>
     </section>
 
@@ -30,7 +30,7 @@
                     {{csrf_field()}}
                     <div class="box-body">
                         <div class="form-group col-lg-6">
-                            <label> Year:</label>
+                            <label> 年份:</label>
                             <select class="form-control "
                                     name="year" id="year" onchange="getWeeks()">
                                 @for($i = date('Y')-5; $i <= date('Y'); $i++)
@@ -47,15 +47,15 @@
 
                         </div>
                         <div class="form-group col-lg-6">
-                            <label> Week:</label>
+                            <label> 自然周:</label>
                             <select class="form-control" name="week" id="week">
                                 <option value="0">Loading</option>
                             </select>
                         </div>
                         <div class="form-group col-lg-6">
-                            <label> Department:</label>
+                            <label> 部门:</label>
                             <select class="form-control" name="department_id" id="department" onchange="getSite()">
-                                <option value="0">All Department</option>
+                                <option value="0">全部部门</option>
                                 @foreach($departments as $department)
                                     @if($selected_department == $department -> department_id)
                                         <option value="{{$department->department_id}}"
@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="form-group col-lg-6">
-                            <label> Site:</label>
+                            <label> 地点:</label>
                             <select class="form-control" name="site_id" id="site">
                                 <option value="0">Loading</option>
                             </select>
@@ -80,7 +80,7 @@
                     </div><!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary center-block">Generate</button>
+                        <button type="submit" class="btn btn-primary center-block">生成</button>
 
                     </div>
                 </form>
@@ -97,13 +97,12 @@
                 <table class="table table-striped b-t b-light">
                     <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>姓名</th>
                         <?php $start_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1)))->addDay(-1) ?>
                         @for($i = 0; $i < 7; $i++)
                             <th>{{$start_date->addDay(1)->format('d/m')}} <span
                                         style="text-align: center">{{$start_date->format('D')}}</span></th>
                         @endfor
-                        <th>Total</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -113,7 +112,7 @@
                                 {{$employee->name}}<br><br>
                                 {{$employee->nric}}<br>
                                 {{$employee->title->name}}<br>
-                                M: {{$employee->phone}}<br>
+                                电话: {{$employee->phone}}<br>
                             </td>
                             <?php $start_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 1)))->addDay(-1) ?>
                             <?php $end_date = \Carbon\Carbon::parse(date('Y-m-d', strtotime($selected_year . "-W" . $selected_week . "-" . 7))) ?>
@@ -138,19 +137,19 @@
                                     @if($rosters->count()>0)
                                         @foreach($rosters as $roster)
                                             <div class="bg-info">
-                                                <b>ROSTER:</b></br>
+                                                <b>排班:</b></br>
                                                 {{$roster->shift->site->name}}<br>
-                                                R.S: {{\Carbon\Carbon::parse($roster->shift->start_time)->format('H:i')}}
+                                                开始: {{\Carbon\Carbon::parse($roster->shift->start_time)->format('H:i')}}
                                                 <br>
-                                                R.E: {{$roster->shift->getEndTime()->format('H:i')}}<br>
-                                                R.D: {{$roster->shift->hour.' h'.($roster->shift->mintue == 0?'':$roster->shift->mintue.' m')}}
+                                                结束: {{$roster->shift->getEndTime()->format('H:i')}}<br>
+                                                时长: {{$roster->shift->hour.' 小时'.($roster->shift->mintue == 0?'':$roster->shift->mintue.' 分')}}
                                             </div>
                                         @endforeach
                                     @endif
                                     @if($leave)
 
                                         <div class="bg-danger">
-                                            <b>LEAVE:</b></br>
+                                            <b>假期:</b></br>
                                             {{$leave->leaveType->name}}
                                             ({{\App\Http\Models\LeaveModel::$types[$leave->type_id]}})
                                         </div>
@@ -158,7 +157,7 @@
 
                                     @if($rosters->count()==0 and !$leave)
                                         <div class="bg-info text-center">
-                                            n.a.
+                                            无数据
                                         </div>
                                     @endif
 
@@ -171,35 +170,35 @@
                                                 @foreach($employee->getAttendance($site->site_id, $shift->shift_id, $duty_date) as $attendance)
                                                     <?php $shift = $attendance['in'] ? $attendance['in']->shift : $attendance['out']->shift ?>
                                                     <div>
-                                                        <b>ATTENDANCE:</b></br>
+                                                        <b>打卡记录:</b></br>
                                                         {{$shift->site->name}}<br>
-                                                        S.S: {{\Carbon\Carbon::parse($shift->start_time)->format('H:i')}}
-                                                        <br>
-                                                        S.E: {{$shift->getEndTime()->format('H:i')}}<br>
-                                                        S.D: {{$shift->hour.' h'.($shift->mintue == 0?'':$shift->mintue.' m')}}
-                                                        <br>
+                                                        {{--开始: {{\Carbon\Carbon::parse($shift->start_time)->format('H:i')}}--}}
+                                                        {{--<br>--}}
+                                                        {{--结束: {{$shift->getEndTime()->format('H:i')}}<br>--}}
+                                                        {{--S.D: {{$shift->hour.' h'.($shift->mintue == 0?'':$shift->mintue.' m')}}--}}
+                                                        {{--<br>--}}
 
                                                         <?php $in = $attendance['in'] ? \Carbon\Carbon::parse($attendance['in']->date_time) : ''?>
                                                         <?php $out = $attendance['out'] ? \Carbon\Carbon::parse($attendance['out']->date_time) : ''?>
-                                                        A.I:
+                                                        开始:
                                                         @if($attendance['in'])
                                                             <?php $shift_date_time = \Carbon\Carbon::parse($in->format('Y-m-d') . ' ' . $shift->start_time) ?>
                                                             <?php $different = $shift_date_time->diffInMinutes($in) ?>
                                                             @if($shift_date_time >= $in)
                                                                 {{$in->format('H:i')}}
-                                                                [E:{{$different}}]
+                                                                [提早:{{$different}}分]
                                                             @else
                                                                 <span class="text-red"
                                                                       style="text-decoration: underline">{{$in->format('H:i')}}
-                                                                    [L:{{$different}}]
+                                                                    [迟到:{{$different}}分]
                                                             </span>
                                                             @endif
 
                                                         @else
-                                                            <b class="text-primary">no record</b>
+                                                            <b class="text-primary">无数据</b>
                                                         @endif
                                                         <br>
-                                                        A.O:
+                                                        结束:
 
                                                         @if($attendance['out'])
                                                             <?php $out_date = \Carbon\Carbon::parse($out->format('Y-m-d')) ?>
@@ -208,19 +207,19 @@
                                                             @if($shift_date_time > $out)
                                                                 <span class="text-red"
                                                                       style="text-decoration: underline">{{$out->format('H:i')}}
-                                                                    [E:{{$different}}]
+                                                                    [提早:{{$different}}分]
                                                             </span>
                                                             @else
                                                                 {{$out->format('H:i')}}
-                                                                [L:{{$different}}]
+                                                                [迟到:{{$different}}分]
                                                             @endif
                                                             {{$out_date>$start_date?'[N]':''}}
                                                         @else
-                                                            <b class="text-primary">no record</b>
+                                                            <b class="text-primary">无数据</b>
                                                         @endif
 
                                                         <br>
-                                                        A.D:
+                                                        时长:
                                                         @if($attendance['out'] and $attendance['in'])
                                                             <?php
                                                             $diff_hour = $in->diffInHours($out);
@@ -233,7 +232,7 @@
                                                                 <?php $color = 'text-danger';$style = 'text-decoration: underline;background:yellow' ?>
                                                             @endif
                                                             <span class="{{$color}}" style="{{$style}}">
-                                                                 {{$diff_hour.' h '.$diff_minute.' m'}}
+                                                                 {{$diff_hour.' '.$diff_minute.' 分'}}
                                                             </span>
                                                         @endif
 
@@ -251,7 +250,6 @@
                                     @endif
                                 </td>
                             @endfor
-                            <td></td>
                         </tr>
 
                     @endforeach

@@ -176,12 +176,12 @@ class AttendanceModel extends BaseModel
 
     public function isOut()
     {
-        return $this->status == self::MODE_OUT;
+        return $this->mode == self::MODE_OUT;
     }
 
     public function isIn()
     {
-        return $this->status == self::MODE_IN;
+        return $this->mode == self::MODE_IN;
     }
 
     public function getMode()
@@ -192,5 +192,10 @@ class AttendanceModel extends BaseModel
     public function getModeTextAttribute()
     {
         return $this->getMode() == self::MODE_IN ? '上班' : '下班';
+    }
+
+    public function getDateTime()
+    {
+        return $this->date_time;
     }
 }
