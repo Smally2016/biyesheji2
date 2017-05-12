@@ -26,7 +26,7 @@
 
 </head>
 <body class="hold-transition login-page"
-      style="background-image: url('/image/waos_main_background_3.jpg');background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+      style="background-image: url('/images/bg3.jpg');background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 <div class="login-box" style="margin-bottom: 0">
     <div class="login-logo">
         <b style="text-shadow: 1px 1px white;font-size: 45px">泰尼贸易</b><br>
@@ -35,7 +35,7 @@
 </div>
 <h3 style="text-shadow: 1px 1px white;white-space: nowrap;text-align: center">行走的考勤打卡机</h3>
 <div class="login-box" style="margin-top: 10px">
-    <div class="login-box-body">
+    <div class="login-box-body" style="background-color: rgba(0,0,0,0.4)">
 
         <p class="login-box-msg">{{ session('message') }}</p>
         <form method="post">

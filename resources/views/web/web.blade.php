@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Home</title>
+    <title>泰尼贸易有限公司官网</title>
     <link href="web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,12 +33,11 @@
 <div class="collapse navbar-collapse navbar-fixed-top" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav ">
         <li class="active"><a href="javascript:;">公司简介<span class="sr-only">(current)</span></a></li>
-        <li><a href="#about" class="scroll">关于我们</a></li>
         <li><a href="#work" class="scroll">公司产品</a></li>
         <li><a href="#advantage" class="scroll">团队优势</a></li>
-        <li><a href="#address" class="scroll">公司分布</a></li>
-        <li><a href="#team" class="scroll">员工生活</a></li>
+        <li><a href="/login" class="scroll">进入后台管理</a></li>
     </ul>
+    <span class="pull-left" style="color: white;font-size: 25px;line-height: 50px">Tiny Trade</span>
 
 </div><!-- /.navbar-collapse -->
 <!-- /.container-fluid -->
@@ -82,9 +81,7 @@
     <!--about-->
     <div class="about-setion" id="about">
         <div class="container">
-
-            <h2 class="tittle">关于我们</h2>
-            <div class="about-grids">
+            <div class="about-grids" style="margin: 0">
                 <div class="col-md-3 about-grid-w3l-agileifo">
                     <div class="icons">
                         <i class="glyphicon glyphicon-cloud" aria-hidden="true"></i>
@@ -119,11 +116,6 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-
-            <div class="about-top">
-                <img src="/images/1.png">
-            </div>
-
         </div>
         <!--about-->
     </div>
@@ -137,7 +129,6 @@
                 <li data-filter="2">鞋帽服饰</li>
                 <li data-filter="3">办公用品</li>
                 <li data-filter="4">机械</li>
-
             </ul>
             <div class="filtr-container">
                 <div class=" col-md-4 filtr-item" data-category="1, 5" data-sort="Busy streets">
@@ -272,8 +263,9 @@
     </div>
 
     <!--advantages-->
-    <div class="what-section" id="advantage">
+    <div class="what-section" id="advantage" style="background: #f2f2f2">
         <div class="container">
+            <h3 class="tittle">团队优势</h3>
             <div class="what-grids">
                 <div class="col-md-6 test-list">
                     <h3 class="tittle2">Why People like us?</h3>
@@ -355,80 +347,6 @@
         </div>
     </div>
 
-    <!--team-->
-    <div class="team" id="address">
-        <div class="container">
-            <h3 class="tittle3"> Our Team</h3>
-            <div class="team-grids">
-                <div class="col-md-3 team-grid">
-                    <div class="team-img">
-                        <img src="/images/t1.jpg" class="img-responsive" alt=" "/>
-                        <figcaption class="overlay">
-                            <h5>voluptatem quia voluptas </h5>
-                            <p>sit aspernatur aut odit aut fugit,</p>
-                            <div class="social-icon">
-                                <a href="#"><i class="icon"></i></a>
-                                <a href="#"><i class="icon1"></i></a>
-                                <a href="#"><i class="icon2"></i></a>
-                            </div>
-                        </figcaption>
-                    </div>
-                    <h4>John Filmr Doe</h4>
-                    <span>Managing Director</span>
-                </div>
-                <div class="col-md-3 team-grid">
-                    <div class="team-img">
-                        <img src="/images/t3.jpg" class="img-responsive" alt=" "/>
-                        <figcaption class="overlay">
-                            <h5>voluptatem quia voluptas </h5>
-                            <p>sit aspernatur aut odit aut fugit,</p>
-                            <div class="social-icon">
-                                <a href="#"><i class="icon"></i></a>
-                                <a href="#"><i class="icon1"></i></a>
-                                <a href="#"><i class="icon2"></i></a>
-                            </div>
-                        </figcaption>
-                    </div>
-                    <h4>Jaye Smith</h4>
-                    <span>Lead Developer</span>
-                </div>
-                <div class="col-md-3 team-grid">
-                    <div class="team-img">
-                        <img src="/images/t2.jpg" class="img-responsive" alt=" "/>
-                        <figcaption class="overlay">
-                            <h5>voluptatem quia voluptas </h5>
-                            <p>sit aspernatur aut odit aut fugit,</p>
-                            <div class="social-icon">
-                                <a href="#"><i class="icon"></i></a>
-                                <a href="#"><i class="icon1"></i></a>
-                                <a href="#"><i class="icon2"></i></a>
-                            </div>
-                        </figcaption>
-                    </div>
-                    <h4>Mike Arney</h4>
-                    <span>Sr. UI Designer</span>
-                </div>
-                <div class="col-md-3 team-grid">
-                    <div class="team-img">
-                        <img src="/images/t4.jpg" class="img-responsive" alt=" "/>
-                        <figcaption class="overlay">
-                            <h5>voluptatem quia voluptas </h5>
-                            <p>sit aspernatur aut odit aut fugit,</p>
-                            <div class="social-icon">
-                                <a href="#"><i class="icon"></i></a>
-                                <a href="#"><i class="icon1"></i></a>
-                                <a href="#"><i class="icon2"></i></a>
-                            </div>
-                        </figcaption>
-                    </div>
-                    <h4>Michele Lampa</h4>
-                    <span>Managing Director</span>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-
 
 </div>
 <!---- testmonials ---->
@@ -439,7 +357,7 @@
 <div class="copy-section" style="background: white">
     <div class="container">
         <div class="footer-top">
-            <p style="color: #666666">Copyright &copy; 2016.Tiny tradational All rights reserved.<a  href="javascript:;">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            <p style="color: #666666">Copyright &copy; 2016.Tiny tradational All rights reserved.<a href="javascript:;">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
             </p>
         </div>
     </div>
