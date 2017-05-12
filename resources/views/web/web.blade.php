@@ -268,11 +268,11 @@
             <h3 class="tittle">团队优势</h3>
             <div class="what-grids">
                 <div class="col-md-6 test-list">
-                    <h3 class="tittle2">Why People like us?</h3>
+                    <h3 class="tittle2">为什么选择我们?</h3>
                     <div class="tab1 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">Olypian quarrel gorilla congolium</li>
+                            <li class="text">员工掌握多种语言</li>
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
                             amet sodales,
@@ -281,7 +281,7 @@
                     <div class="tab2 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">Defacto lingo est igpay atinlay quee</li>
+                            <li class="text">有耐心</li>
 
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
@@ -291,7 +291,7 @@
                     <div class="tab3 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">How to install Wordpress</li>
+                            <li class="text">尊重他人</li>
 
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
@@ -301,7 +301,7 @@
                     <div class="tab4 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">Epsum factorial non deposit</li>
+                            <li class="text">熟悉社交礼仪</li>
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
                             amet sodales,
@@ -310,7 +310,7 @@
                     <div class="tab5 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">Quid pro quo hic escorol</li>
+                            <li class="text">团队年轻，朝气蓬勃</li>
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
                             amet sodales,
@@ -319,7 +319,7 @@
                     <div class="tab6 wow bounceIn" data-wow-delay="0.4s">
                         <ul>
                             <li><span> </span></li>
-                            <li class="text">Can the Theme be translated?</li>
+                            <li class="text">奉献社会，致力于环保</li>
                         </ul>
                         <p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat
                             amet sodales,
@@ -329,15 +329,15 @@
                 </div>
 
                 <div class="col-md-6 bar-grid">
-                    <h3 class="tittle2">Our Skills </h3>
+                    <h3 class="tittle2">我们的技能</h3>
                     <div class='bar_group'>
-                        <div class='bar_group__bar thin' label='Wordpress' show_values='true' tooltip='true'
+                        <div class='bar_group__bar thin' label='外语能力' show_values='true' tooltip='true'
                              value='343'></div>
-                        <div class='bar_group__bar thin' label='Joomla' show_values='true' tooltip='true'
+                        <div class='bar_group__bar thin' label='国际交往礼仪' show_values='true' tooltip='true'
                              value='235'></div>
-                        <div class='bar_group__bar thin' label='Drupal' show_values='true' tooltip='true'
+                        <div class='bar_group__bar thin' label='细心' show_values='true' tooltip='true'
                              value='975'></div>
-                        <div class='bar_group__bar thin' label='Magento' show_values='true' tooltip='true'
+                        <div class='bar_group__bar thin' label='尊重' show_values='true' tooltip='true'
                              value='456'></div>
                     </div>
 
