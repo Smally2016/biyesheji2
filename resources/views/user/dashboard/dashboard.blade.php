@@ -24,14 +24,21 @@
     <!-- Main content -->
     <section class="content">
 
-        <form action="" method="post">
-            {{ csrf_field() }}
-            <input type="hidden" name="mode" value="{{ $mode }}">
-            <button class="btn btn-lg btn-info center-block" type="submit">我要{{ $this_time_in_out }}</button>
-        </form>
+        <div class="row">
+            <form action="" method="post">
+                {{ csrf_field() }}
+                <input type="hidden" name="mode" value="{{ $mode }}">
+                <button class="btn btn-lg btn-info center-block" type="submit">我要{{ $this_time_in_out }}</button>
+            </form>
+        </div>
+        <br>
 
-        <div id="allmap"></div>
-
+        @if($site)
+            <p class="text-center text-bold">需要在蓝色圈内打卡</p>
+            <div id="allmap" class="m-t-md"></div>
+        @else
+            <p class="text-center text-bold">无排班记录， 不需要在范围内打开</p>
+        @endif
         <div class="row" style="padding-top: 30px">
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box">
@@ -113,43 +120,45 @@
         // 创建地址解析器实例
         var myGeo = new BMap.Geocoder();
         // 将地址解析结果显示在地图上,并调整地图视野
-        myGeo.getPoint("鲁东大学(北区)", function(point){
+        myGeo.getPoint("{{ $site->address }}", function (point) {
             if (point) {
-                map.centerAndZoom(point, 16);
+                map.centerAndZoom(point, 18);
                 map.addOverlay(new BMap.Marker(point));
-            }else{
+            } else {
                 alert("您选择地址没有解析到结果!");
             }
+            var circle = new BMap.Circle(point, 200, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
+            map.addOverlay(circle);
         }, "北京市");
-//
-//
-//        var marker = new BMap.Marker(new BMap.Point(116.404, 39.915)); // 创建点
-//        var polyline = new BMap.Polyline([
-//            new BMap.Point(116.399, 39.910),
-//            new BMap.Point(116.405, 39.920),
-//            new BMap.Point(116.425, 39.900)
-//        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});   //创建折线
-//
-//        var circle = new BMap.Circle(point, 500, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
-//
-//        var polygon = new BMap.Polygon([
-//            new BMap.Point(116.387112, 39.920977),
-//            new BMap.Point(116.385243, 39.913063),
-//            new BMap.Point(116.394226, 39.917988),
-//            new BMap.Point(116.401772, 39.921364),
-//            new BMap.Point(116.41248, 39.927893)
-//        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建多边形
-//
-//        var pStart = new BMap.Point(116.392214, 39.918985);
-//        var pEnd = new BMap.Point(116.41478, 39.911901);
-//        var rectangle = new BMap.Polygon([
-//            new BMap.Point(pStart.lng, pStart.lat),
-//            new BMap.Point(pEnd.lng, pStart.lat),
-//            new BMap.Point(pEnd.lng, pEnd.lat),
-//            new BMap.Point(pStart.lng, pEnd.lat)
-//        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建矩形
-//
-//        map.addOverlay(circle);            //增加圆
+        //
+        //
+        //        var marker = new BMap.Marker(new BMap.Point(116.404, 39.915)); // 创建点
+        //        var polyline = new BMap.Polyline([
+        //            new BMap.Point(116.399, 39.910),
+        //            new BMap.Point(116.405, 39.920),
+        //            new BMap.Point(116.425, 39.900)
+        //        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});   //创建折线
+        //
+        //        var circle = new BMap.Circle(point, 500, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
+        //
+        //        var polygon = new BMap.Polygon([
+        //            new BMap.Point(116.387112, 39.920977),
+        //            new BMap.Point(116.385243, 39.913063),
+        //            new BMap.Point(116.394226, 39.917988),
+        //            new BMap.Point(116.401772, 39.921364),
+        //            new BMap.Point(116.41248, 39.927893)
+        //        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建多边形
+        //
+        //        var pStart = new BMap.Point(116.392214, 39.918985);
+        //        var pEnd = new BMap.Point(116.41478, 39.911901);
+        //        var rectangle = new BMap.Polygon([
+        //            new BMap.Point(pStart.lng, pStart.lat),
+        //            new BMap.Point(pEnd.lng, pStart.lat),
+        //            new BMap.Point(pEnd.lng, pEnd.lat),
+        //            new BMap.Point(pStart.lng, pEnd.lat)
+        //        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建矩形
+        //
+        //        map.addOverlay(circle);            //增加圆
 
     </script>
 

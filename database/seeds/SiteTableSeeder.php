@@ -15,11 +15,11 @@ class SiteTableSeeder extends Seeder
 
         $sites = [
             [
-                'name' => '博览中心',
+                'name' => '芝罘区',
                 'status' => \App\Http\Models\SiteModel::STATUS_NORMAL,
                 'lat' => '121.366412',
                 'lng' => '37.528438',
-                'address' => '烟台市莱山区烟台国际博览中心'
+                'address' => '烟台市芝罘区鲁东大学(北区)'
             ],
             [
                 'name' => '驻京联络处',

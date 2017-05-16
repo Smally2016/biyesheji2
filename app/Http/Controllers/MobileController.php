@@ -68,9 +68,11 @@ class MobileController extends Controller
             $remind = $roster->getDate();
         }
 
+        $site = null;
         $next_check_in = '无排班';
         if ($roster) {
             $shift = $roster->shift;
+            $site = $shift->site;
             if ($last_check->isIn()) {
                 $next_check_in = $shift->getEndTime();
             } else {
@@ -87,6 +89,7 @@ class MobileController extends Controller
             'working_time' => $working_time,
             'next_check_in' => $next_check_in,
             'mode' => $mode,
+            'site' => $site,
         ]);
     }
 
