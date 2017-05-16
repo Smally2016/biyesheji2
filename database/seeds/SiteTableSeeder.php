@@ -15,25 +15,25 @@ class SiteTableSeeder extends Seeder
 
         $sites = [
             [
-                'name' => '三水国际商务大厦',
+                'name' => '博览中心',
                 'status' => \App\Http\Models\SiteModel::STATUS_NORMAL,
                 'lat' => '121.366412',
                 'lng' => '37.528438',
-                'remark' => '中国山东省烟台市芝罘区北马路75号'
+                'address' => '烟台市莱山区烟台国际博览中心'
             ],
             [
-                'name' => '天和大厦',
+                'name' => '驻京联络处',
                 'status' => \App\Http\Models\SiteModel::STATUS_NORMAL,
                 'lat' => '121.366412',
                 'lng' => '37.528438',
-                'remark' => '中国山东省烟台市莱山区迎春大街'
+                'address' => '北京市海淀区烟台市驻京联络处'
             ],
             [
                 'name' => '鲁东国际',
                 'status' => \App\Http\Models\SiteModel::STATUS_NORMAL,
                 'lat' => '121.366412',
                 'lng' => '37.528438',
-                'remark' => '中国山东省烟台市芝罘区青年南路青年南路交汇处'
+                'address' => '烟台市福山区烟台经济技术开发区'
             ]
         ];
 
