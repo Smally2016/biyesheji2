@@ -33,11 +33,7 @@ class AdminUserController extends Controller
         $data['password'] = Hash::make($data['password']);
         $data['status'] = 1;
         $data['created_at'] = date('Y-m-d H:i:s');
-        if (isset($data['admin']) and $data['admin'] == 'on') {
-            $data['is_admin'] = 1;
-        } else {
-            $data['is_admin'] = 0;
-        }
+        $data['is_admin'] = 1;
         $user = new UserModel();
         if ($user->create($data)) {
             Session::flash('success', 'Created Successfully');
