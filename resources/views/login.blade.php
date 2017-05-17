@@ -26,7 +26,7 @@
 
 </head>
 <body class="hold-transition login-page"
-      style="background-image: url('/images/bg3.jpg');background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+      style="/*background-image: url('/images/bg3.jpg');*/background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 <div class="login-box" style="margin-bottom: 0">
     <div class="login-logo">
         <b style="text-shadow: 1px 1px white;font-size: 45px">泰尼贸易</b><br>

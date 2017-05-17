@@ -31,7 +31,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    @yield('map_js')
 </head>
 <body class="hold-transition skin-blue-light sidebar-mini">
 <!-- Site wrapper -->

@@ -1,5 +1,4 @@
-@extends('layout.mobile_layout')
-
+@extends('layout_mobile.mobile_layout')
 @section('map_js')
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=3aWKjGfb9VaH0Kby4LQr5y93w9vnEMqq"></script>
@@ -34,7 +33,7 @@
             <form action="" method="post">
                 {{ csrf_field() }}
                 <input type="hidden" name="mode" value="{{ $mode }}">
-                <button class="btn btn-lg btn-info center-block" type="submit">我要{{ $this_time_in_out }}</button>
+                <button class="btn btn-lg btn-info center-block punch_card" type="submit">我要{{ $this_time_in_out }}</button>
             </form>
         </div>
         <br>
@@ -117,7 +116,7 @@
         // 百度地图API功能
         var map = new BMap.Map("allmap");
         var point = new BMap.Point(116.404, 39.915);
-        map.centerAndZoom(point, 14);
+        map.centerAndZoom(point, 15);
         var my_point = {};
         var site_point = {};
 
@@ -128,38 +127,76 @@
                 map.addOverlay(mk);
                 map.panTo(r.point);
                 my_point = r.point;
-//                alert('您的位置：' + r.point.lng + ',' + r.point.lat);
-//                console.log('wo的位置：' +my_point.lat)
+                var marker = new BMap.Marker(r.point);  // 创建标注
+                map.addOverlay(marker);
+//                alert('wode'+my_point.lat);
+                var distance = getDistance(my_point.lat, my_point.lng, site_point.lat, site_point.lng);
+                console.log(distance)
+//                alert(distance)
+                if(distance>=500){
+                    console.log('不在打卡区域内')
+                    $(".punch_card").attr('disabled','disabled');
+                    $(".punch_card").text('不在打卡区域内');
+                    var circle = new BMap.Circle(point, 200, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
+                    map.addOverlay(circle);
+                }
+                var label = new BMap.Label("我的位置",{offset:new BMap.Size(20,-10)});
+                label.setStyle({
+                    color:'grey',
+                    fontSize : "12px",
+                    borderColor:'white',
+                    height : "20px",
+                    lineHeight : "20px",
+                    backgroundColor:"white",
+                    maxWidth:'100px',
+                    fontFamily:"微软雅黑"
+                });
+                marker.setLabel(label);
             }
-
             else {
                 alert('failed' + this.getStatus());
             }
 
         }, {enableHighAccuracy: true})
+
+
         // 创建地址解析器实例
         var myGeo = new BMap.Geocoder();
         // 将地址解析结果显示在地图上,并调整地图视野
         console.log("{{ $site->address }}");
         myGeo.getPoint("{{ $site->address }}", function (point) {
             if (point) {
-                map.centerAndZoom(point, 14);
+                map.centerAndZoom(point, 15);
                 map.addOverlay(new BMap.Marker(point));
 //                alert(point.lng + ',' + point.lat)
                 site_point = point;
                 console.log(my_point);
-                var distance = getDistance(my_point.lat, my_point.lng, site_point.lat, site_point.lng);
-                console.log(distance)
+//                alert('map'+site_point.lat);
+
             } else {
                 alert("您选择地址没有解析到结果!");
             }
-            var circle = new BMap.Circle(point, 200, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
-            map.addOverlay(circle);
+
+            //添加标注
+            var marker = new BMap.Marker(point);  // 创建标注
+            map.addOverlay(marker);
+            var label = new BMap.Label("工作地点",{offset:new BMap.Size(20,-10)});
+            label.setStyle({
+                color:'grey',
+                fontSize : "12px",
+                borderColor:'white',
+                height : "20px",
+                lineHeight : "20px",
+                backgroundColor:"white",
+                maxWidth:'100px',
+                fontFamily:"微软雅黑"
+            });
+            marker.setLabel(label);
         }, "北京市");
+
+
         map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
         map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
-//        console.log('我的位置'+my_point.lat);
-//        console.log('工作地点位置'+site_point.lat);
 
 
         //查看两点之间的距离
@@ -171,41 +208,8 @@
             var deltaLng = toRadians(lng1) - toRadians(lng2);
             var dis = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(deltaLat / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(deltaLng / 2), 2)));
             return dis * 6378137;
-
             function toRadians(d) {  return d * Math.PI / 180;}
         }
-        var distance = getDistance(my_point.lat, my_point.lng, site_point.lat, site_point.lng);
-//        console.log(distance)
-        //
-
-//                        var marker = new BMap.Marker(new BMap.Point(116.404, 39.915)); // 创建点
-//                        var polyline = new BMap.Polyline([
-//                            new BMap.Point(116.399, 39.910),
-//                            new BMap.Point(116.405, 39.920),
-//                            new BMap.Point(116.425, 39.900)
-//                        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});   //创建折线
-//
-//                        var circle = new BMap.Circle(point, 500, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
-//
-//                        var polygon = new BMap.Polygon([
-//                            new BMap.Point(116.387112, 39.920977),
-//                            new BMap.Point(116.385243, 39.913063),
-//                            new BMap.Point(116.394226, 39.917988),
-//                            new BMap.Point(116.401772, 39.921364),
-//                            new BMap.Point(116.41248, 39.927893)
-//                        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建多边形
-//
-//                        var pStart = new BMap.Point(116.392214, 39.918985);
-//                        var pEnd = new BMap.Point(116.41478, 39.911901);
-//                        var rectangle = new BMap.Polygon([
-//                            new BMap.Point(pStart.lng, pStart.lat),
-//                            new BMap.Point(pEnd.lng, pStart.lat),
-//                            new BMap.Point(pEnd.lng, pEnd.lat),
-//                            new BMap.Point(pStart.lng, pEnd.lat)
-//                        ], {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5});  //创建矩形
-//
-//                        map.addOverlay(circle);            //增加圆
-
     </script>
 
 @endsection

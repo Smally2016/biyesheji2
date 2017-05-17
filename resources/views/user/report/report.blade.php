@@ -1,4 +1,4 @@
-@extends('layout.mobile_layout')
+@extends('layout_mobile.mobile_layout')
 
 @section('header')
     <title xmlns="http://www.w3.org/1999/html">Attendance Weekly Report | ADP Center WAOS&trade;</title>

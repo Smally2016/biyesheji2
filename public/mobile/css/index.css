@@ -1,0 +1,29 @@
+.content-wrapper {
+  background-size: 100% 100%;
+}
+#welcome .dashboard {
+  padding: 30px 0;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+}
+#welcome .dashboard .page_intro {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+}
+#welcome .dashboard .page_intro img {
+  width: 70px;
+}
+#welcome .dashboard .page_intro p {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 20px;
+}
+#mobile_header {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
