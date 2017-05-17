@@ -35,7 +35,7 @@
         <li class="active"><a href="javascript:;">公司简介<span class="sr-only">(current)</span></a></li>
         <li><a href="#work" class="scroll">公司产品</a></li>
         <li><a href="#advantage" class="scroll">团队优势</a></li>
-        <li><a href="/login" class="scroll">进入后台管理</a></li>
+        <li><a href="login" class="">进入后台管理</a></li>
     </ul>
     <span class="pull-left" style="color: white;font-size: 25px;line-height: 50px">Tiny Trade</span>
 
