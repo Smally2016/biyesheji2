@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_015931_create_departments_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_015931_create_departments_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_015954_create_department_employee_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_015954_create_department_employee_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020014_create_department_site_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020014_create_department_site_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020027_create_department_user_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020027_create_department_user_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020058_create_leaves_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020058_create_leaves_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020132_create_readers_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020132_create_readers_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020150_create_records_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020150_create_records_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020203_create_rosters_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020203_create_rosters_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020217_create_shifts_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020217_create_shifts_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020229_create_sites_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020229_create_sites_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_08_10_020248_create_titles_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_08_10_020248_create_titles_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016_08_10_020027_create_department_user_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020027_create_department_user_table.php">
+      <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="19" column="83" lean-forward="false" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+            <state relative-caret-position="295">
+              <caret line="139" column="20" lean-forward="false" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016_08_10_020043_create_employees_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020043_create_employees_table.php">
+      <file leaf-file-name="WechatController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="53" column="83" lean-forward="false" selection-start-line="53" selection-start-column="83" selection-end-line="53" selection-end-column="83" />
+            <state relative-caret-position="237">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -132,7 +118,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016_08_10_020248_create_titles_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016_08_10_020248_create_titles_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_10_020248_create_titles_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
@@ -226,7 +212,6 @@
         <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/UserModel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_015910_create_attendances_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_015931_create_departments_table.php" />
@@ -242,6 +227,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020217_create_shifts_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020229_create_sites_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020248_create_titles_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" />
       </list>
     </option>
   </component>
@@ -1013,21 +999,7 @@
       <workItem from="1495095018417" duration="205000" />
       <workItem from="1495096020194" duration="287000" />
       <workItem from="1495097377576" duration="2296000" />
-      <workItem from="1495124037510" duration="4047000" />
-    </task>
-    <task id="LOCAL-00004" summary="Improved site name sorting">
-      <created>1476261859557</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1476261859557</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Improved site name sorting">
-      <created>1476262112882</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1476262112882</updated>
+      <workItem from="1495124037510" duration="4250000" />
     </task>
     <task id="LOCAL-00006" summary="Improved site name sorting">
       <created>1476262596013</created>
@@ -1358,11 +1330,25 @@
       <option name="project" value="LOCAL" />
       <updated>1495128469952</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Add wechat">
+      <created>1495128871051</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1495128871051</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add wechat">
+      <created>1495129032881</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1495129032881</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94433000" />
+    <option name="totallyTimeSpent" value="94636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1725,14 +1711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1768,14 +1746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="142" column="14" lean-forward="true" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1915,6 +1885,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="22" column="83" lean-forward="false" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="139" column="20" lean-forward="false" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>

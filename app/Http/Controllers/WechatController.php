@@ -22,7 +22,7 @@ class WechatController extends Controller
             ],
             // ..
         ];
-        $app = new Application(config($config));
+        $app = new Application($config);
         $oauth = $app->oauth;
 // 未登录
 
