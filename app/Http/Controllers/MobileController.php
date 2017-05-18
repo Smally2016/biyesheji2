@@ -32,7 +32,7 @@ class MobileController extends Controller
         $last_check = $employee->attendances()->orderBy('date_time', 'desc')->first();
         $current_check = $last_check ? $last_check->date_time : '';
 
-        $in_out = '';
+        $in_out = '上班';
         $this_time_in_out = '';
         $mode = AttendanceModel::MODE_IN;
         if ($last_check && $last_check->isIn()) {

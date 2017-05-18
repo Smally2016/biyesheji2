@@ -1,7 +1,7 @@
 <?php
 Route::get('/test', 'TestController@test');
 
-Route::get('/home', function (){
+Route::get('/home', function () {
     return view('web.web');
 });
 Route::get('/login', 'UserController@login');
@@ -9,13 +9,13 @@ Route::post('/login', 'UserController@doLogin');
 Route::get('/check/{id}', 'EmployeeController@cardDetail');
 Route::any('/wechat', 'WechatController@serve');
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'wechat_login']], function () {
     Route::get('/', 'DashboardController@getInout');
     Route::get('/logout', 'UserController@logout');
 
     Route::group(['prefix' => 'm'], function () {
 
-        Route::get('/', function (){
+        Route::get('/', function () {
             return view('user.welcome.welcome');
         });
         Route::get('/dashboard', 'MobileController@index');
