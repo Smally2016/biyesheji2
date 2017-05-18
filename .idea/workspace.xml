@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="Add baidu map">
+    <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
     </list>
@@ -44,8 +44,8 @@
       <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="752">
+              <caret line="145" column="27" lean-forward="true" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="UserModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
+            <state relative-caret-position="280">
               <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding />
             </state>
@@ -64,8 +64,8 @@
       <file leaf-file-name="EmployeeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="82" column="37" lean-forward="false" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+            <state relative-caret-position="-86">
+              <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -74,7 +74,7 @@
       <file leaf-file-name="EmployeeModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="-2705">
               <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
@@ -385,7 +385,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="mobi&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;mob&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;rout&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/routes.php&#10;recordcon&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/RecordController.php&#10;shiftcon&#9;null&#9;null&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;usercon&#9;null&#9;null&#10;atten&#9;null&#9;null&#10;shift&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/ShiftModel.php&#10;roster&#9;null&#9;null&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;employee&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/EmployeeController.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;atte&#9;null&#9;null&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="employee&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;mobi&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;mob&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/MobileController.php&#10;rout&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/routes.php&#10;recordcon&#9;FILE&#9;file:///Users/ivan/Code/biyesheji2/app/Http/Controllers/RecordController.php&#10;shiftcon&#9;null&#9;null&#10;route&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/routes.php&#10;usercon&#9;null&#9;null&#10;atten&#9;null&#9;null&#10;shift&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/ShiftModel.php&#10;roster&#9;null&#9;null&#10;emplo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;user&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;usermo&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/UserModel.php&#10;attendan&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/AttendanceModel.php&#10;attendancemo&#9;null&#9;null&#10;rost&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;rosterc&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Controllers/RosterController.php&#10;employee.php&#9;FILE&#9;file:///Users/yufengliang/Code/biyesheji2/app/Http/Models/EmployeeModel.php&#10;atte&#9;null&#9;null&#10;departmentmo&#9;null&#9;null&#10;admindepar&#9;null&#9;null" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
@@ -534,7 +534,7 @@
       <workItem from="1495094883425" duration="51000" />
       <workItem from="1495095018417" duration="205000" />
       <workItem from="1495096020194" duration="287000" />
-      <workItem from="1495097377576" duration="257000" />
+      <workItem from="1495097377576" duration="516000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -753,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495096164951</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add baidu map">
+      <created>1495097638804</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1495097638804</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88347000" />
+    <option name="totallyTimeSpent" value="88606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -860,13 +867,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/attendance/weekly.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1189,34 +1189,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="280">
+          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="176">
+          <caret line="1386" column="20" lean-forward="false" selection-start-line="1386" selection-start-column="20" selection-end-line="1386" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
+        <state relative-caret-position="-2705">
           <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="145" column="27" lean-forward="true" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="82" column="37" lean-forward="false" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+        <state relative-caret-position="-86">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>

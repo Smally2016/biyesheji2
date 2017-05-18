@@ -62,10 +62,11 @@ class EmployeeController extends Controller
         $data['name'] = strtoupper($data['name']);
         $employee = new EmployeeModel();
         if ($employee->create($data)) {
+            $employee = EmployeeModel::where('nric', $data['nric'])->first();
             $department_employee = new DepartmentEmployeeModel();
             $department_employee->create([
                 'department_id' => $data['department_id'],
-                'employee_id' => EmployeeModel::where('nric', $data['nric'])->first()->employee_id
+                'employee_id' => $employee->employee_id
             ]);
             Session::flash('success', 'Created Successfully');
             $phone_number = $data['phone'];
