@@ -25,7 +25,7 @@ class UserModel extends BaseModel implements AuthenticatableContract, CanResetPa
     protected $fillable = [
         'username', 'email', 'phone', 'password', 'name',
         'remark', 'status', 'is_admin', 'created_at',
-        'user_id'
+        'user_id', 'open_id'
     ];
 
     /**
