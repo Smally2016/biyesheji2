@@ -23,7 +23,8 @@ class DepartmentTableSeeder extends Seeder
 
         foreach ($departments as $department) {
             \App\Http\Models\DepartmentModel::create([
-                'name' => $department
+                'name' => $department,
+                'status' => 1
             ]);
         }
     }
