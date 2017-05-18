@@ -53,6 +53,14 @@
                     <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div><!-- /.col -->
             </div>
+            <div id="wechat">
+                <hr>
+                <div class="row">
+                    <div class="col-xs-offset-4 col-xs-4">
+                        <button type="button" class="btn btn-success btn-block btn-flat">微信登录</button>
+                    </div><!-- /.col -->
+                </div>
+            </div>
         </form>
     </div><!-- /.login-box-body -->
     <div class="login-box-msg" style="padding-top: 30px">
@@ -68,5 +76,17 @@
 <!-- Bootstrap 3.3.5 -->
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 
+<script type="text/javascript">
+    if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+        var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            //在微信中打开
+            $('#wechat').show();
+        }
+    } else {
+        //否则就是PC浏览器打开
+    }
+
+</script>
 </body>
 </html>
