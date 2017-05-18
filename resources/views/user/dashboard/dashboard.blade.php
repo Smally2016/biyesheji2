@@ -38,7 +38,8 @@
             <form action="" method="post">
                 {{ csrf_field() }}
                 <input type="hidden" name="mode" value="{{ $mode }}">
-                <button class="btn btn-lg btn-info center-block punch_card" type="submit">我要{{ $this_time_in_out }}</button>
+                <button class="btn btn-lg btn-info center-block punch_card" type="submit">
+                    我要{{ $this_time_in_out }}</button>
             </form>
         </div>
         <br>
@@ -138,23 +139,27 @@
                 var distance = getDistance(my_point.lat, my_point.lng, site_point.lat, site_point.lng);
                 console.log(distance)
 //                alert(distance)
-                if(distance>=500){
+                if (distance >= 500) {
                     console.log('不在打卡区域内')
-                    $(".punch_card").attr('disabled','disabled');
+                    $(".punch_card").attr('disabled', 'disabled');
                     $(".punch_card").text('不在打卡区域内');
-                    var circle = new BMap.Circle(point, 200, {strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.5}); //创建圆
+                    var circle = new BMap.Circle(point, 200, {
+                        strokeColor: "blue",
+                        strokeWeight: 2,
+                        strokeOpacity: 0.5
+                    }); //创建圆
                     map.addOverlay(circle);
                 }
-                var label = new BMap.Label("我的位置",{offset:new BMap.Size(20,-10)});
+                var label = new BMap.Label("我的位置", {offset: new BMap.Size(20, -10)});
                 label.setStyle({
-                    color:'grey',
-                    fontSize : "12px",
-                    borderColor:'white',
-                    height : "20px",
-                    lineHeight : "20px",
-                    backgroundColor:"white",
-                    maxWidth:'100px',
-                    fontFamily:"微软雅黑"
+                    color: 'grey',
+                    fontSize: "12px",
+                    borderColor: 'white',
+                    height: "20px",
+                    lineHeight: "20px",
+                    backgroundColor: "white",
+                    maxWidth: '100px',
+                    fontFamily: "微软雅黑"
                 });
                 marker.setLabel(label);
             }
@@ -165,11 +170,14 @@
         }, {enableHighAccuracy: true})
 
 
+        @php
+            $address = $site?$site->address:'';
+        @endphp
         // 创建地址解析器实例
         var myGeo = new BMap.Geocoder();
         // 将地址解析结果显示在地图上,并调整地图视野
-        console.log("{{ $site->address }}");
-        myGeo.getPoint("{{ $site->address }}", function (point) {
+        console.log("{{ $address }}");
+        myGeo.getPoint("{{ $address }}", function (point) {
             if (point) {
                 map.centerAndZoom(point, 15);
                 map.addOverlay(new BMap.Marker(point));
@@ -185,16 +193,16 @@
             //添加标注
             var marker = new BMap.Marker(point);  // 创建标注
             map.addOverlay(marker);
-            var label = new BMap.Label("工作地点",{offset:new BMap.Size(20,-10)});
+            var label = new BMap.Label("工作地点", {offset: new BMap.Size(20, -10)});
             label.setStyle({
-                color:'grey',
-                fontSize : "12px",
-                borderColor:'white',
-                height : "20px",
-                lineHeight : "20px",
-                backgroundColor:"white",
-                maxWidth:'100px',
-                fontFamily:"微软雅黑"
+                color: 'grey',
+                fontSize: "12px",
+                borderColor: 'white',
+                height: "20px",
+                lineHeight: "20px",
+                backgroundColor: "white",
+                maxWidth: '100px',
+                fontFamily: "微软雅黑"
             });
             marker.setLabel(label);
         }, "北京市");
@@ -213,7 +221,9 @@
             var deltaLng = toRadians(lng1) - toRadians(lng2);
             var dis = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(deltaLat / 2), 2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.pow(Math.sin(deltaLng / 2), 2)));
             return dis * 6378137;
-            function toRadians(d) {  return d * Math.PI / 180;}
+            function toRadians(d) {
+                return d * Math.PI / 180;
+            }
         }
     </script>
 

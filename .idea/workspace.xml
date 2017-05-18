@@ -4,6 +4,7 @@
     <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,24 +29,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="361">
+              <caret line="179" column="35" lean-forward="false" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
               <folding>
-                <marker date="1495095191000" expanded="true" signature="9:16" ph="..." />
-                <marker date="1495095191000" expanded="true" signature="7793:7806" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="9:16" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="9:38" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="50:69" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="81:133" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="145:153" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="311:319" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="689:695" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="841:855" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="916:923" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="1043:1062" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="1823:1838" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="1843:1871" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="2456:2472" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="2538:2547" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="3206:3222" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="3781:3796" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="4058:4062" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="6107:6117" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="6107:6141" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="6107:6142" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="6277:6287" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="6319:6329" ph="..." />
+                <marker date="1495099522000" expanded="true" signature="8016:8029" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="23">
+              <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -190,11 +212,11 @@
         <option value="$PROJECT_DIR$/resources/views/admin/site/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminSiteController.php" />
         <option value="$PROJECT_DIR$/database/seeds/SiteTableSeeder.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/DepartmentTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -327,7 +349,11 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -341,11 +367,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
+            <PATH_ELEMENT USER_OBJECT="resources">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Http">
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -359,15 +389,33 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
+            <PATH_ELEMENT USER_OBJECT="resources">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Http">
+            <PATH_ELEMENT USER_OBJECT="views">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Controllers">
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -534,7 +582,7 @@
       <workItem from="1495094883425" duration="51000" />
       <workItem from="1495095018417" duration="205000" />
       <workItem from="1495096020194" duration="287000" />
-      <workItem from="1495097377576" duration="1223000" />
+      <workItem from="1495097377576" duration="1567000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -774,11 +822,25 @@
       <option name="project" value="LOCAL" />
       <updated>1495098911420</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add baidu map">
+      <created>1495099161093</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1495099161093</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add baidu map">
+      <created>1495099368904</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1495099368904</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89313000" />
+    <option name="totallyTimeSpent" value="89657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1176,17 +1238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <marker date="1495095191000" expanded="true" signature="9:16" ph="..." />
-            <marker date="1495095191000" expanded="true" signature="7793:7806" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminDepartmentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1237,9 +1288,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        <state relative-caret-position="23">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="179" column="35" lean-forward="false" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+          <folding>
+            <marker date="1495099522000" expanded="true" signature="9:16" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="9:38" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="50:69" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="81:133" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="145:153" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="311:319" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="689:695" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="841:855" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="916:923" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="1043:1062" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="1823:1838" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="1843:1871" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="2456:2472" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="2538:2547" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="3206:3222" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="3781:3796" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="4058:4062" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="6107:6117" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="6107:6141" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="6107:6142" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="6277:6287" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="6319:6329" ph="..." />
+            <marker date="1495099522000" expanded="true" signature="8016:8029" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
