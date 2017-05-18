@@ -69,7 +69,7 @@ class MobileController extends Controller
             $remind = $roster->getDate();
         }
 
-        $site = null;
+        $site = new \stdClass();
         $next_check_in = '无排班';
         if ($roster) {
             $shift = $roster->shift;
