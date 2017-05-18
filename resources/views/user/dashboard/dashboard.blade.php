@@ -170,14 +170,11 @@
         }, {enableHighAccuracy: true})
 
 
-        @php
-            $address = $site?$site->address:'';
-        @endphp
         // 创建地址解析器实例
         var myGeo = new BMap.Geocoder();
         // 将地址解析结果显示在地图上,并调整地图视野
-        console.log("{{ $address }}");
-        myGeo.getPoint("{{ $address }}", function (point) {
+        console.log("{{ $site?$site->address:'' }}");
+        myGeo.getPoint("{{ $site?$site->address:'' }}", function (point) {
             if (point) {
                 map.centerAndZoom(point, 15);
                 map.addOverlay(new BMap.Marker(point));
