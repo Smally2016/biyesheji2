@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,35 +28,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="179" column="35" lean-forward="false" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+            <state relative-caret-position="3933">
+              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding>
-                <marker date="1495099522000" expanded="true" signature="9:16" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="9:38" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="50:69" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="81:133" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="145:153" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="311:319" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="689:695" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="841:855" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="916:923" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="1043:1062" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="1823:1838" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="1843:1871" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="2456:2472" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="2538:2547" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="3206:3222" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="3781:3796" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="4058:4062" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="6107:6117" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="6107:6141" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="6107:6142" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="6277:6287" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="6319:6329" ph="..." />
-                <marker date="1495099522000" expanded="true" signature="8016:8029" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="9:16" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="9:38" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="50:69" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="81:133" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="145:153" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="311:319" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="689:695" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="841:855" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="916:923" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="1043:1062" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="1823:1838" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="1843:1871" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="2456:2472" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="2538:2547" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="3206:3222" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="3781:3796" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="4058:4062" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="6200:6225" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="6257:6282" ph="..." />
+                <marker date="1495099579000" expanded="true" signature="7969:7982" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,8 +62,50 @@
       <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="151">
+              <caret line="139" column="20" lean-forward="false" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wechat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/wechat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoLogin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="e#28#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -76,7 +114,7 @@
       <file leaf-file-name="UserModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="1403">
               <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding />
             </state>
@@ -86,7 +124,7 @@
       <file leaf-file-name="EmployeeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
+            <state relative-caret-position="1219">
               <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="21" />
               <folding />
             </state>
@@ -96,18 +134,8 @@
       <file leaf-file-name="EmployeeModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2705">
+            <state relative-caret-position="598">
               <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminDepartmentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminDepartmentController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -166,8 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_10_020116_create_leave_type_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Models/LeaveModel.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/new.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/employee/edit.blade.php" />
@@ -199,7 +225,6 @@
         <option value="$PROJECT_DIR$/app/Http/Models/AttendanceModel.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/mobile_layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/roster/roster.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/ShiftModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/DepartmentModel.php" />
         <option value="$PROJECT_DIR$/resources/views/user/report/report.blade.php" />
@@ -215,8 +240,11 @@
         <option value="$PROJECT_DIR$/database/seeds/DepartmentTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Models/EmployeeModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
         <option value="$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php" />
       </list>
     </option>
   </component>
@@ -327,9 +355,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="External Dependencies">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="/">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Users">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ivan">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Code">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -420,9 +473,78 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Http">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Middleware">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,17 +562,156 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Middleware" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/user" />
       <recent name="$PROJECT_DIR$/resources/views/user/roster" />
-      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/user/dashboard" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/mobile/css/index.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/mobile/css/index.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/department/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/department/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/department/manage_site.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/department/manage_user.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/department/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/employee/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/employee/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/employee/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/leave/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/leave/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/leave/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/reader/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/site/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/site/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/site/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/user/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/user/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/admin/user/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/dashboard/inout.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/employee/card.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/employee/detail.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/employee/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/employee/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/employee/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/shift/edit.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/shift/list.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/shift/new.blade.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/resources/views/web/web.blade.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -582,7 +843,8 @@
       <workItem from="1495094883425" duration="51000" />
       <workItem from="1495095018417" duration="205000" />
       <workItem from="1495096020194" duration="287000" />
-      <workItem from="1495097377576" duration="1567000" />
+      <workItem from="1495097377576" duration="2296000" />
+      <workItem from="1495124037510" duration="724000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -836,18 +1098,39 @@
       <option name="project" value="LOCAL" />
       <updated>1495099368904</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add baidu map">
+      <created>1495099525212</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1495099525213</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add baidu map">
+      <created>1495099581848</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1495099581848</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add wechat">
+      <created>1495124965850</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1495124965850</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89657000" />
+    <option name="totallyTimeSpent" value="91110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27896994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30597016" sideWeight="0.5286123" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -919,7 +1202,6 @@
     <MESSAGE value="Improve employee" />
     <MESSAGE value="Add mobile" />
     <MESSAGE value="Improve mobile user" />
-    <MESSAGE value="Add wechat" />
     <MESSAGE value="Improve wechat" />
     <MESSAGE value="Add db" />
     <MESSAGE value="Fix err" />
@@ -928,7 +1210,8 @@
     <MESSAGE value="Improve new and edit site" />
     <MESSAGE value="Improve seeder" />
     <MESSAGE value="Add baidu map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add baidu map" />
+    <MESSAGE value="Add wechat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add wechat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,20 +1226,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/attendance/weekly.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="311" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="391" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ShiftController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -996,13 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4646">
           <caret line="202" column="6" lean-forward="false" selection-start-line="202" selection-start-column="6" selection-end-line="202" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/wechat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1088,13 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1511,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="1403">
           <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding />
         </state>
@@ -1266,13 +1521,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="1386" column="20" lean-forward="false" selection-start-line="1386" selection-start-column="20" selection-end-line="1386" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2705">
+        <state relative-caret-position="598">
           <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
@@ -1280,49 +1534,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
+        <state relative-caret-position="1219">
           <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/dashboard/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="179" column="35" lean-forward="false" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+        <state relative-caret-position="3933">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
           <folding>
-            <marker date="1495099522000" expanded="true" signature="9:16" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="9:38" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="50:69" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="81:133" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="145:153" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="311:319" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="689:695" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="841:855" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="916:923" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="1043:1062" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="1823:1838" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="1843:1871" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="2456:2472" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="2538:2547" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="3206:3222" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="3781:3796" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="4058:4062" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="6107:6117" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="6107:6141" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="6107:6142" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="6277:6287" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="6319:6329" ph="..." />
-            <marker date="1495099522000" expanded="true" signature="8016:8029" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="9:16" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="9:38" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="50:69" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="81:133" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="145:153" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="311:319" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="689:695" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="841:855" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="916:923" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="1043:1062" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="1823:1838" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="1843:1871" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="2456:2472" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="2538:2547" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="3206:3222" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="3781:3796" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="4058:4062" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="6200:6225" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="6257:6282" ph="..." />
+            <marker date="1495099579000" expanded="true" signature="7969:7982" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/wechat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#28#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="139" column="20" lean-forward="false" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
