@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Leave Type</title>
+    <title>请假管理</title>
     @endsection
     @section('body')
 

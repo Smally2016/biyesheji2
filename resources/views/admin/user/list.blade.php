@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-    <title>WAOS | User List</title>
+    <title>系统管理员列表</title>
     @endsection
 
     @section('body')

@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Department</title>
+    <title>部门管理</title>
 @endsection
 @section('body')
         <!-- Content Header (Page header) -->

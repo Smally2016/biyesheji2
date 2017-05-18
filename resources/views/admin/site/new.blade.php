@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | New Site</title>
+    <title>新增工作地点</title>
     <style type="text/css">
         body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";font-size:14px;}
         #l-map{height:300px;width:100%;}

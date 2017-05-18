@@ -87,32 +87,24 @@
                         <i class="glyphicon glyphicon-cloud" aria-hidden="true"></i>
                     </div>
                     <h4>易于定制</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
                 <div class="col-md-3 about-grid-w3l-agileifo">
                     <div class="icons">
                         <i class="glyphicon glyphicon-leaf" aria-hidden="true"></i>
                     </div>
                     <h4>致力环保</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
                 <div class="col-md-3 about-grid-w3l-agileifo">
                     <div class="icons">
                         <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
                     </div>
                     <h4>奉献社会</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
                 <div class="col-md-3 about-grid-w3l-agileifo">
                     <div class="icons">
                         <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
                     </div>
                     <h4>充满活力</h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Lorem ipsum dolor. reprehenderit</p>
                 </div>
                 <div class="clearfix"></div>
             </div>

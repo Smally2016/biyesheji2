@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-    <title>WAOS | Employee Card</title>
+    <title>员工卡</title>
     @endsection
 
     @section('body')

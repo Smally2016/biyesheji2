@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Shift</title>
+    <title>工作时间段</title>
     <link rel="stylesheet" href="{{asset('css/select2.min.css')}}">
 
     @endsection

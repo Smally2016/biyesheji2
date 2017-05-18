@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Edit Site</title>
+    <title>工作地点编辑</title>
     <style type="text/css">
         body, html {
             width: 100%;
