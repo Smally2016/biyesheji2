@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@yield('mobile_title')</title>
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
@@ -43,14 +44,15 @@
 <!-- =============================================== -->
 
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper" style="@yield('bg_img')">
+<div class="content-wrapper" style="@yield('bg_img');@yield('padding_style')">
     @yield('body')
+    @yield('mobile_footer')
 </div><!-- /.content-wrapper -->
 
 {{--<footer class="main-footer">--}}
 {{--@yield('footer')--}}
 {{--</footer>--}}
-@yield('mobile_footer')
+
 </div><!-- ./wrapper -->
 
 <!-- jQuery 2.1.4 -->

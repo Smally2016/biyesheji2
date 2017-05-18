@@ -1,4 +1,8 @@
-@extends('layout_mobile.mobile_layout')
+@extends('layout_mobile.master')
+
+@section('mobile_title','欢迎使用考勤机')
+
+@section('padding_style','padding:0 !important')
 
 {{--@section('bg_img',"background-image:url('/images/welcome_bg.jpeg')")--}}
 

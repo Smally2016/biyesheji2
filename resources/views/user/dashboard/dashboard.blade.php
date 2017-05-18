@@ -1,4 +1,9 @@
 @extends('layout_mobile.mobile_layout')
+
+@section('mobile_title','打卡')
+
+@section('dashboard_footer_style','background:rgba(0,0,0,.1)')
+
 @section('map_js')
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=3aWKjGfb9VaH0Kby4LQr5y93w9vnEMqq"></script>
@@ -39,7 +44,7 @@
         <br>
 
         @if($site)
-            <p class="text-center text-bold">需要在蓝色圈内打卡</p>
+            {{--<p class="text-center text-bold">需要在蓝色圈内打卡</p>--}}
             <div id="allmap" class="m-t-md"></div>
         @else
             <p class="text-center text-bold">无排班记录， 不需要在范围内打开</p>

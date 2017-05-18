@@ -1,5 +1,9 @@
 @extends('layout_mobile.mobile_layout')
 
+@section('mobile_title','我的个人信息')
+
+@section('my_footer_style','background:rgba(0,0,0,.1)')
+
 @section('body')
 
     <!-- Content Header (Page header) -->

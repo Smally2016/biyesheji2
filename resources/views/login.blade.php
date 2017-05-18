@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Log in</title>
+    <title>登录</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -26,7 +26,7 @@
 
 </head>
 <body class="hold-transition login-page"
-      style="/*background-image: url('/images/bg3.jpg');*/background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+      style="background-image: url('/images/bg3.jpg');background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
 <div class="login-box" style="margin-bottom: 0">
     <div class="login-logo">
         <b style="text-shadow: 1px 1px white;font-size: 45px">泰尼贸易</b><br>

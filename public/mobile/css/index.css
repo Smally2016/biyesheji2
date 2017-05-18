@@ -1,5 +1,6 @@
 .content-wrapper {
   background-size: 100% 100%;
+  padding-bottom: 62px;
 }
 #welcome .dashboard {
   padding: 30px 0;
@@ -26,4 +27,24 @@
   text-align: center;
   font-size: 22px;
   font-weight: 600;
+}
+#mobile_footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+#mobile_footer .footer_list {
+  padding: 10px 0;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+#mobile_footer .footer_list p {
+  margin: 0;
+  color: #666666;
+}
+#mobile_footer img {
+  width: 20px;
 }

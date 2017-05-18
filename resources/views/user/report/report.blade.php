@@ -1,5 +1,9 @@
 @extends('layout_mobile.mobile_layout')
 
+@section('mobile_title','我的周报')
+
+@section('report_footer_style','background:rgba(0,0,0,.1)')
+
 @section('header')
     <title xmlns="http://www.w3.org/1999/html">Attendance Weekly Report | ADP Center WAOS&trade;</title>
     <link rel="stylesheet" href="{{asset('css/select2.min.css')}}">
@@ -10,8 +14,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            考勤记录
-            <small>周报</small>
+            周报
         </h1>
         <ol class="breadcrumb">
             <li><a href="/"><i class="fa fa-dashboard"></i> 主页</a></li>
