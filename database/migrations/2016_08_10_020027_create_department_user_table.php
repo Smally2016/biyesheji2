@@ -16,7 +16,8 @@ class CreateDepartmentUserTable extends Migration
         Schema::create('department_user', function (Blueprint $table) {
             $table->unsignedInteger('department_id');
             $table->unsignedInteger('user_id');
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

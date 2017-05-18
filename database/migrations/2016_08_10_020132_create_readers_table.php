@@ -18,7 +18,8 @@ class CreateReadersTable extends Migration
             $table->unsignedInteger('site_id');
             $table->string('name');
             $table->string('remark')->nullable();
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

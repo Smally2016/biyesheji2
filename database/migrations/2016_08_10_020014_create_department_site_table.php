@@ -16,7 +16,8 @@ class CreateDepartmentSiteTable extends Migration
         Schema::create('department_site', function (Blueprint $table) {
             $table->unsignedInteger('department_id');
             $table->unsignedInteger('site_id');
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

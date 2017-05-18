@@ -50,7 +50,8 @@ class CreateEmployeesTable extends Migration
             $table->decimal('r_public_holiday')->nullable();
             $table->decimal('r_rest_day')->nullable();
 
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

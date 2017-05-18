@@ -18,7 +18,8 @@ class CreateLeaveTypeTable extends Migration
             $table->string('name');
             $table->string('remark')->nullable();
             $table->tinyInteger('status');
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

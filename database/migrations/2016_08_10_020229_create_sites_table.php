@@ -22,7 +22,8 @@ class CreateSitesTable extends Migration
             $table->double('lng');
             $table->string('address')->nullable();
             $table->string('postal')->nullable();
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

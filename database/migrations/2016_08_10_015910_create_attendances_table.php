@@ -25,7 +25,8 @@ class CreateAttendancesTable extends Migration
             $table->date('duty_date')->default('0000-00-00');
             $table->tinyInteger('status')->default(1);
             $table->tinyInteger('mode');
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

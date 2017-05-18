@@ -19,7 +19,8 @@ class CreateRostersTable extends Migration
             $table->unsignedInteger('shift_id');
             $table->date('date');
             $table->tinyInteger('status');
-            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
