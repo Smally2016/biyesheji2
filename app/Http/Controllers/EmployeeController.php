@@ -78,8 +78,9 @@ class EmployeeController extends Controller
                 'is_admin' => UserModel::EMPLOYEE,
                 'status' => UserModel::STATUS_NORMAL
             ]);
+            $user_id = UserModel::where('phone', $phone_number)->first()->user_id;
             $employee->update([
-                'user_id' => $user->user_id
+                'user_id' => $user_id
             ]);
             return Redirect::to(Request::path());
         } else {
