@@ -14,8 +14,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/logout', 'UserController@logout');
 
     Route::group(['prefix' => 'm'], function () {
-        Route::get('/', 'MobileController@index');
-        Route::post('/', 'MobileController@checkIn');
+
+        Route::get('/', function (){
+            return view('user.welcome.welcome');
+        });
+        Route::get('/dashboard', 'MobileController@index');
+        Route::post('/dashboard', 'MobileController@checkIn');
         Route::get('/rosters', 'MobileController@getRosterList');
         Route::get('/reports', 'MobileController@getReport');
         Route::post('/reports', 'MobileController@getReport');

@@ -1,4 +1,8 @@
-@extends('layout.mobile_layout')
+@extends('layout_mobile.mobile_layout')
+
+@section('mobile_title','我的考勤记录')
+
+@section('list_footer_style','background:rgba(0,0,0,.1)')
 
 @section('body')
 

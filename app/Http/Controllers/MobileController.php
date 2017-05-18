@@ -131,7 +131,7 @@ class MobileController extends Controller
 
         ]);
 
-        return redirect('/m');
+        return redirect('/m/dashboard');
     }
 
     public function getRosterList()

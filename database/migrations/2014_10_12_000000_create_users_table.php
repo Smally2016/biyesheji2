@@ -18,12 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('password', 60);
-            $table->rememberToken();
+            $table->rememberToken();//记住登录 生成cookie
             $table->string('name');
             $table->string('remark')->nullable();
             $table->tinyInteger('status');
             $table->tinyInteger('is_admin');
-            $table->timestamps();
+            $table->timestamps();//创建更新 创建
         });
     }
 
