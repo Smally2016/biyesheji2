@@ -53,14 +53,14 @@
                     <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div><!-- /.col -->
             </div>
-            <div id="wechat">
-                <hr>
-                <div class="row">
-                    <div class="col-xs-offset-4 col-xs-4">
-                        <button type="button" class="btn btn-success btn-block btn-flat">微信登录</button>
-                    </div><!-- /.col -->
-                </div>
-            </div>
+            {{--<div id="wechat">--}}
+                {{--<hr>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-xs-offset-4 col-xs-4">--}}
+                        {{--<button type="button" class="btn btn-success btn-block btn-flat">微信登录</button>--}}
+                    {{--</div><!-- /.col -->--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </form>
     </div><!-- /.login-box-body -->
     <div class="login-box-msg" style="padding-top: 30px">
