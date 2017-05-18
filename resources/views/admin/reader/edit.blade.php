@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Reader</title>
+    <title></title>
     @endsection
     @section('body')
             <!-- Content Header (Page header) -->

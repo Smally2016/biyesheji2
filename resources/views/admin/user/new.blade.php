@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | User Create</title>
+    <title>新增系统管理员</title>
     @endsection
     @section('body')
 

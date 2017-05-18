@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | Edit Employee</title>
+    <title>编辑员工</title>
     <link rel="stylesheet" href="{{asset('css/select2.min.css')}}">
 
 @endsection

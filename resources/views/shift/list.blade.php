@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-    <title>WAOS | Shift List</title>
+    <title>工作时间段列表</title>
 @endsection
 
 @section('body')

@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('header')
-    <title>WAOS | Dashboard</title>
+    <title>打卡面板</title>
     @endsection
 
     @section('body')

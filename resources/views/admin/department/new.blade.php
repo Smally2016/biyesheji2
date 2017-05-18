@@ -1,6 +1,6 @@
 @extends('layout')
 @section('header')
-    <title>WAOS | New Department</title>
+    <title>新增部门</title>
     @endsection
     @section('body')
 
