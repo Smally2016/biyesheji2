@@ -15,6 +15,11 @@
 
     <!-- Main content -->
     <section class="content">
+        @if(!$user->open_id)
+            <div class="col-xs-offset-4 col-xs-4">
+                <a href="/wechat" type="button" class="btn btn-success btn-block btn-flat">微信绑定</a>
+            </div><!-- /.col -->
+        @endif
         <div class="box box-primary">
             <div class="box-header with-border">
                 <h3 class="box-title">{{ $employee->name }}</h3>

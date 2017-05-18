@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db1d1366-87da-41f3-9c68-bb4dbb47cea9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" />
     </list>
     <ignored path="adp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,18 +59,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="83" column="32" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+            <state relative-caret-position="231">
+              <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="60" selection-end-column="48" />
               <folding>
-                <marker date="1495126639000" expanded="true" signature="372:402" ph="..." />
-                <marker date="1495126639000" expanded="true" signature="729:758" ph="..." />
-                <marker date="1495126639000" expanded="true" signature="1893:1913" ph="..." />
-                <marker date="1495126639000" expanded="true" signature="1963:1975" ph="..." />
-                <marker date="1495126639000" expanded="true" signature="3468:3499" ph="..." />
-                <marker date="1495126639000" expanded="true" signature="3553:3581" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="372:402" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="729:758" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="1893:1913" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="1963:1975" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="3532:3563" ph="..." />
+                <marker date="1495126772000" expanded="true" signature="3617:3645" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,8 +79,8 @@
       <file leaf-file-name="MobileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            <state relative-caret-position="286">
+              <caret line="286" column="25" lean-forward="false" selection-start-line="286" selection-start-column="20" selection-end-line="286" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -89,18 +89,8 @@
       <file leaf-file-name="wechat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/wechat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="112">
               <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoLogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -119,8 +109,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -129,9 +119,37 @@
       <file leaf-file-name="WechatController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="529">
+              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/profile/profile.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <marker date="1495127183000" expanded="true" signature="9:38" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="50:73" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="85:130" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="142:148" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="701:718" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="890:907" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1012:1027" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1134:1151" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1258:1274" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1379:1398" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1503:1521" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1626:1646" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1753:1771" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1860:1876" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="1986:2008" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="2227:2246" ph="..." />
+                <marker date="1495127183000" expanded="true" signature="2455:2459" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,6 +189,7 @@
       <find>all site</find>
       <find>Saved new Site</find>
       <find>suggest</find>
+      <find>prof</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/Http</dir>
@@ -205,7 +224,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShiftController.php" />
         <option value="$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/wechat.php" />
@@ -238,8 +256,9 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/AutoLogin.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MobileController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" />
         <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/WechatController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/profile/profile.blade.php" />
       </list>
     </option>
   </component>
@@ -449,7 +468,85 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="report">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="profile">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="dashboard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="biyesheji2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="resources">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="user">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="attendance">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -861,7 +958,7 @@
       <workItem from="1495095018417" duration="205000" />
       <workItem from="1495096020194" duration="287000" />
       <workItem from="1495097377576" duration="2296000" />
-      <workItem from="1495124037510" duration="1981000" />
+      <workItem from="1495124037510" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="Improved migration files">
       <created>1470849422578</created>
@@ -1171,11 +1268,25 @@
       <option name="project" value="LOCAL" />
       <updated>1495125978554</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Add wechat">
+      <created>1495126643118</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1495126643118</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add wechat">
+      <created>1495126992811</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1495126992811</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92367000" />
+    <option name="totallyTimeSpent" value="92912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1278,13 +1389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1325,13 +1429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/profile/profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1579,22 +1676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/wechat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Models/EmployeeModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1607,22 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3342">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="147" column="17" lean-forward="false" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1656,17 +1721,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/wechat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WechatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/attendance/attendance.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <marker date="1495095191000" expanded="true" signature="9:38" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="50:73" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="85:132" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="144:150" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="983:1007" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="1049:1080" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="1122:1147" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="1189:1213" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="1410:1434" ph="..." />
+            <marker date="1495095191000" expanded="true" signature="1553:1557" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="83" column="32" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        <state relative-caret-position="231">
+          <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="60" selection-end-column="48" />
           <folding>
-            <marker date="1495126639000" expanded="true" signature="372:402" ph="..." />
-            <marker date="1495126639000" expanded="true" signature="729:758" ph="..." />
-            <marker date="1495126639000" expanded="true" signature="1893:1913" ph="..." />
-            <marker date="1495126639000" expanded="true" signature="1963:1975" ph="..." />
-            <marker date="1495126639000" expanded="true" signature="3468:3499" ph="..." />
-            <marker date="1495126639000" expanded="true" signature="3553:3581" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="372:402" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="729:758" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="1893:1913" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="1963:1975" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="3532:3563" ph="..." />
+            <marker date="1495126772000" expanded="true" signature="3617:3645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="286" column="25" lean-forward="false" selection-start-line="286" selection-start-column="20" selection-end-line="286" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/profile/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <marker date="1495127183000" expanded="true" signature="9:38" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="50:73" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="85:130" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="142:148" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="701:718" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="890:907" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1012:1027" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1134:1151" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1258:1274" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1379:1398" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1503:1521" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1626:1646" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1753:1771" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1860:1876" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="1986:2008" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="2227:2246" ph="..." />
+            <marker date="1495127183000" expanded="true" signature="2455:2459" ph="..." />
           </folding>
         </state>
       </provider>
