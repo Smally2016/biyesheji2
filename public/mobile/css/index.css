@@ -29,6 +29,7 @@
   font-weight: 600;
 }
 #mobile_footer {
+  z-index: 1000;
   clear: both;
   position: fixed;
   bottom: 0;
