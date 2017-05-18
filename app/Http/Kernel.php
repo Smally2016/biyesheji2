@@ -3,7 +3,7 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Someline\Http\Middleware\AutoLogin;
+use App\Http\Middleware\AutoLogin;
 
 class Kernel extends HttpKernel
 {
