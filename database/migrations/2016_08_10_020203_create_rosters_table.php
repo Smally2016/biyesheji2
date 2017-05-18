@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateRostersTable extends Migration
 {
@@ -18,7 +19,7 @@ class CreateRostersTable extends Migration
             $table->unsignedInteger('shift_id');
             $table->date('date');
             $table->tinyInteger('status');
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

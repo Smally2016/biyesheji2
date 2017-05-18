@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateDepartmentsTable extends Migration
 {
@@ -17,7 +18,7 @@ class CreateDepartmentsTable extends Migration
             $table->string('name', 100);
             $table->tinyInteger('status');
             $table->string('remark');
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

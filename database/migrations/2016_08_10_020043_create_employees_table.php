@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateEmployeesTable extends Migration
 {
@@ -49,7 +50,7 @@ class CreateEmployeesTable extends Migration
             $table->decimal('r_public_holiday')->nullable();
             $table->decimal('r_rest_day')->nullable();
 
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

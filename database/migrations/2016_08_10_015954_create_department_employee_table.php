@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateDepartmentEmployeeTable extends Migration
 {
@@ -15,7 +16,7 @@ class CreateDepartmentEmployeeTable extends Migration
         Schema::create('department_employee', function (Blueprint $table) {
             $table->unsignedInteger('department_id');
             $table->unsignedInteger('employee_id');
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

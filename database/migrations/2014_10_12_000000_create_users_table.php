@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateUsersTable extends Migration
 {
@@ -24,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('remark')->nullable();
             $table->tinyInteger('status');
             $table->tinyInteger('is_admin');
-            $table->timestamps();//创建更新 创建
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));//创建更新 创建
         });
     }
 

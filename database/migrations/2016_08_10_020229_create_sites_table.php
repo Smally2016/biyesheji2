@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateSitesTable extends Migration
 {
@@ -21,7 +22,7 @@ class CreateSitesTable extends Migration
             $table->double('lng');
             $table->string('address')->nullable();
             $table->string('postal')->nullable();
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

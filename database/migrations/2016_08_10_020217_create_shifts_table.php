@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateShiftsTable extends Migration
 {
@@ -21,7 +22,7 @@ class CreateShiftsTable extends Migration
             $table->integer('minute');
             $table->tinyInteger('status');
             $table->string('remark')->nullable();
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

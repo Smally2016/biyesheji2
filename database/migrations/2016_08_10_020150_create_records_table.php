@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateRecordsTable extends Migration
 {
@@ -20,7 +21,7 @@ class CreateRecordsTable extends Migration
             $table->string('name')->nullable();
             $table->tinyInteger('mode');
             $table->string('id')->nullable();
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateTitlesTable extends Migration
 {
@@ -18,7 +19,7 @@ class CreateTitlesTable extends Migration
             $table->string('full_name')->nullable();
             $table->tinyInteger('status');
             $table->string('remark')->nullable();
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 

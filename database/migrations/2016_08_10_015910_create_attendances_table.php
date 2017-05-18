@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateAttendancesTable extends Migration
 {
@@ -24,7 +25,7 @@ class CreateAttendancesTable extends Migration
             $table->date('duty_date')->default('0000-00-00');
             $table->tinyInteger('status')->default(1);
             $table->tinyInteger('mode');
-            $table->timestamps();
+            $table->timestamps()->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
