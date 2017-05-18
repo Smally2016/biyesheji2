@@ -12,6 +12,7 @@ class EmployeeModel extends BaseModel
      * @var array
      */
     protected $fillable = [
+        'user_id',
         'name',
         'id',
         'title_id',
