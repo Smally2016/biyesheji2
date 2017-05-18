@@ -34,12 +34,12 @@ class MobileController extends Controller
 
         $in_out = '';
         $this_time_in_out = '';
-        if ($last_check->isIn()) {
+        if ($last_check && $last_check->isIn()) {
             $in_out = '上班';
             $this_time_in_out = '下班';
             $mode = AttendanceModel::MODE_OUT;
         }
-        if ($last_check->isOut()) {
+        if ($last_check &&$last_check->isOut()) {
             $in_out = '下班';
             $this_time_in_out = '上班';
             $mode = AttendanceModel::MODE_IN;
