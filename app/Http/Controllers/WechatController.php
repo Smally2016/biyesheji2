@@ -35,4 +35,12 @@ class WechatController extends Controller
 
         return redirect('/');
     }
+
+    public function test()
+    {
+        if(session('wechat_user')){
+            dd(session('wechat_user'));
+        }
+
+    }
 }

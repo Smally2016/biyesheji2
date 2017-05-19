@@ -8,6 +8,7 @@ Route::get('/login', 'UserController@login');
 Route::post('/login', 'UserController@doLogin');
 Route::get('/check/{id}', 'EmployeeController@cardDetail');
 Route::any('/wechat', 'WechatController@serve');
+Route::any('/test', 'WechatController@test');
 
 Route::group(['middleware' => ['auth', 'wechat_login']], function () {
     Route::get('/', 'DashboardController@getInout');
