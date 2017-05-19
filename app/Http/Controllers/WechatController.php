@@ -18,7 +18,7 @@ class WechatController extends Controller
             // ...
             'oauth' => [
                 'scopes'   => ['snsapi_userinfo'],
-                'callback' => '/',
+                'callback' => '/test',
             ],
             // ..
         ];
