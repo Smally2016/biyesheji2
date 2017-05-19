@@ -74,7 +74,7 @@ class MobileController extends Controller
         if ($roster) {
             $shift = $roster->shift;
             $site = $shift->site;
-            if ($last_check->isIn()) {
+            if ($last_check && $last_check->isIn()) {
                 $next_check_in = $shift->getEndTime();
             } else {
                 $next_check_in = $roster->getDate() . ' ' . $shift->start_time;
